@@ -1,0 +1,74 @@
+/*definition de la police*/
+
+@font-face {
+    font-family:"raleway" ;
+    src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
+*{
+    font-family: "raleway",sans-serif;
+}
+
+/*responsive design*/
+{@media all and (max-device-width:780px)}
+
+
+/*ajustements generaux*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+header{
+    margin: 40px;
+    font-size: 1rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img{
+    width: 120px;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+header img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*navigation*/
+
+nav.nav{
+    width: 25%;
+    margin-left: 20%;
+    padding: 20px;
+    height: 99px;
+}
+
+nav.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav.nav a.lien13{
+    font-size: 0.9rem;
+    color: #0065fc;
+    text-decoration: none;
+}
+
+nav.nav a.lien2{
+    font-size: 0.9rem;
+    color: black;
+    text-decoration: none;
+}
+
+
