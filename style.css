@@ -268,10 +268,11 @@ nav.nav1 i
     margin : 40px 0 60px 0; 
 }
 
-#titre-hebergement
+#titre-hebergement h3
 {
     font-size: 1rem;
-    font-weight:bolder;   
+    font-weight:bolder;  
+    text-align: left; 
 }
 
 .around
@@ -302,6 +303,7 @@ nav.nav1 i
     background-color:#f2f2f2; 
     border-radius:25px;
    
+    margin-left: 100px;
     height: 650px;
     width: 100%;
     
@@ -315,6 +317,7 @@ nav.nav1 i
  object-fit: cover;
  width: 250px;
  height: 120px;
+ margin: 10px;
  border: 1px solid #ffffff;
  border-radius: 10px 10px 0 0;
  
@@ -336,6 +339,7 @@ nav.nav1 i
 .img1
 {
   /*background-image: url("./img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");*/ 
+
 }
 
 .img2
@@ -384,11 +388,11 @@ nav.nav1 i
  align-items: center;*/
   
     display: flex; 
-    /*justify-content:space-between;*/
+    justify-content:space-between;
     flex-direction: row;
     align-items:center;
     padding: 0px 20px 0px 20px;
-    margin-top: 25px;
+    margin-top: 10px;
     background-color:#f2f2f2; 
     border-radius:25px;
 }
@@ -398,19 +402,18 @@ nav.nav1 i
     background-color: #ffffff;
     border-radius: 10px;
     text-align: center;
-    } 
-
+    }  
 
 /*Section 3: Les plus populaires*/
 aside.Les
 {
-    width: 650px;
-    margin-left: 20px;
-    margin-right: 10px;
+    width: 60%;
+    margin-left: 40px;
+    margin-right: 20px;
     background-color: #f2f2f2;
-    padding: 10px;
+    padding: 40px;
     height: 650px;
-    border-radius: 10px;    
+    border-radius: 25px;    
 }
 
 aside h3
@@ -421,12 +424,12 @@ aside h3
 
 .pop-container
 {   display: flex;
-    
     flex-direction: column; 
     align-items: center; 
-    min-height: 150px; 
-    margin-right: 120px;
-    width: 250px;  
+    
+    margin-left: 5px;
+    padding: 40px;
+    width: 350px;  
     height: 650px;
     border-radius: 25px;
     background-color: #f2f2f2;   
@@ -438,12 +441,13 @@ aside h3
   display: flex; 
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   object-fit: cover;
-  width: 120px;
-  height: 150px;
-  margin-right: 20px;
+  width: 35%;
+  height: 160px;
+  margin: 10px;
   padding: 10px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 25px 0 0 25px;
 }
 
 .pop1
@@ -465,7 +469,7 @@ aside h3
     background-color: #ffffff;
     border-radius: 10px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     } 
 
 /*Section 4: Activités à Marseille*/
@@ -491,8 +495,8 @@ h3
  width: 180vh;
  grid-template-columns: repeat(4, 1fr);
  grid-template-rows:repeat(4, 250px);
- column-gap: 5px;;
- 
+ gap: 2px;;
+
 }
 
 /*Ajustement des images*/
@@ -525,6 +529,7 @@ border-radius: 10px 10px 0 0;
 /*background-image: url("./img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");*/
 grid-column: 2;
 object-fit: cover;
+
 width: 100%;
 height: 25vh;
 border-radius: 10px 10px 0 0;
@@ -536,6 +541,7 @@ border: 1px solid #f2f2f2;
 {
 /*background-image: url("./img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");*/
 grid-column:2;
+grid-row: 2;
 object-fit: cover;
 width: 100%;
 height: 25vh;
