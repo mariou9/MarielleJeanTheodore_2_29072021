@@ -1,11 +1,8 @@
 /*definition de la police*/
 
 @font-face {
-    font-family:"raleway" ;
-    src: url(./fonts/Raleway-VariableFont_wght.ttf);
-}
-*{
     font-family: "raleway",sans-serif;
+    src: url(./fonts/Raleway-VariableFont_wght.ttf);
 }
 
 /*responsive design*/
@@ -18,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "raleway",sans-serif;
 }
 
 /*header*/
@@ -97,7 +95,9 @@ h1
 p
 {
     font-size: 0.9rem;
-    margin: 15px;   
+    margin-top: 30px; 
+    margin-bottom: 40px; 
+     
 }
 
 /*Ajustement du champ de recherche*/
@@ -122,7 +122,7 @@ i
     background:#f2f2f2;
     border: 1px;
     border-radius: 2px;
-    padding: 8px;
+    padding: 10px;
 }
 
 input[type="search"]
@@ -136,6 +136,7 @@ font-size: 0.8rem;
 color: black;
 border: 0.5px solid #f2f2f2;
 padding-left: 20px;
+
 }
 
 
@@ -157,7 +158,7 @@ input[type="submit"]
 h3{
     font-size: 0.9rem;
     font-weight: bold;
-    margin: 2px;   
+    
 }
 
 nav.nav1
@@ -169,14 +170,17 @@ nav.nav1
 nav.nav1{
     font-size: 1rem;
     margin-top: 50px;
-    margin-bottom: 40px; ;
-    margin: 30px;
+    margin-bottom: 50px; ;
+    margin: ;
     list-style-type: none;
     font-size: 0.9rem;
     font-weight: bold;
     cursor: pointer;
     
 }
+
+
+
 /*Ajustement des icones filtres*/
 .icons
 {
@@ -320,7 +324,6 @@ nav.nav1 i
  margin: 10px;
  border: 1px solid #ffffff;
  border-radius: 10px 10px 0 0;
- 
 }
 
 /*Couleurs de l'icone etoile*/
@@ -425,7 +428,7 @@ aside h3
 .pop-container
 {   display: flex;
     flex-direction: column; 
-    align-items: center; 
+    align-items:center ; 
     
     margin-left: 5px;
     padding: 40px;
@@ -441,10 +444,10 @@ aside h3
   display: flex; 
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   object-fit: cover;
-  width: 35%;
-  height: 160px;
+  width: 40%;
+  height: 150px;
   margin: 10px;
   padding: 10px;
   border-radius: 25px 0 0 25px;
@@ -468,13 +471,24 @@ aside h3
     border-left: 1px solid#ffffff ;
     background-color: #ffffff;
     border-radius: 10px;
-    text-align: center;
     font-size: 0.9rem;
     } 
 
+.pop-container figure {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   
+}
+
+.pop-container figure h4 {
+    
+writing-mode: horizontal-tb;
+}
+
 /*Section 4: Activités à Marseille*/
 
-section.activity
+/*section.activity
 {
     margin: 120px;
     margin-left: 50px;
@@ -484,8 +498,7 @@ section.activity
 h3
 {
     font-size: 1rem;
-    font-weight: bold;
-    margin: 1%;
+    font-weight: bold;  
 }
 
 .activity-container
@@ -494,8 +507,8 @@ h3
  min-height: 150vh;
  width: 180vh;
  grid-template-columns: repeat(4, 1fr);
- grid-template-rows:repeat(4, 250px);
- gap: 2px;;
+ grid-template-rows: repeat(4, 250px);
+ gap: 10px;
 
 }
 
@@ -504,32 +517,31 @@ h3
 {
    /*display: flex; 
     justify-content: space-around;
-    align-items: center;*/
+    align-items: center;
     cursor: pointer; 
 }
 
-/*Effet au survol*/
+/*Effet au survol
 .activitybox:hover
 {
  transform: scale(1.1);
-}
+}*/
 
-.activitygrid1
-{
-/*background-image: url("./img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");*/
+/*background-image: url("./img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
 grid-column: 1;
+grid-row: 1;
 object-fit: cover;
 width: 100%;
 height: 65vh;
 border-radius: 10px 10px 0 0;
+
 }
 
-.activitygrid2
+.activitygrid2 
 {
-/*background-image: url("./img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");*/
+/*background-image: url("./img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 grid-column: 2;
 object-fit: cover;
-
 width: 100%;
 height: 25vh;
 border-radius: 10px 10px 0 0;
@@ -537,11 +549,10 @@ border: 1px solid #f2f2f2;
 
 }
 
-.activitygrid3
+.activitygrid3 
 {
-/*background-image: url("./img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");*/
+/*background-image: url("./img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 grid-column:2;
-grid-row: 2;
 object-fit: cover;
 width: 100%;
 height: 25vh;
@@ -551,8 +562,9 @@ border: 1px solid #f2f2f2;
 }
 .activitygrid4
 {
-/*background-image: url("./img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");*/
+/*background-image: url("./img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 grid-column: 3;
+grid-row: 1;
 object-fit: cover;
 width: 100%;
 height: 70vh;
@@ -562,8 +574,9 @@ border: 1px solid #f2f2f2;
 
 .activitygrid5
 {
-/*background-image: url("./img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");*/
-grid-column: 4/4;
+/*background-image: url("./img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+grid-column: 4;
+grid-row: 1;
 object-fit: cover;
 width: 100%;
 height: 25vh;
@@ -573,7 +586,7 @@ border: 1px solid #ffffff;
 
 .activitygrid6
 {
-/*background-image: url("./img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");*/
+/*background-image: url("./img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");*
 grid-column: 4;
 object-fit: cover;
 width: 100%;
@@ -582,13 +595,93 @@ border-radius: 10px 10px 0 0;
 border: 1px solid #ffffff;
 }
 
-/*cadre blanc*/
-.activity-container p {
+/*cadre blanc*
+.activity-container h4 {
 border-bottom: 5px solid #ffffff;
 border-radius: 10px;
 box-shadow: 5px 5px 5px 1px #f2f2f2;
-} 
+} */}
  
+/* nouveau code css bloc : activites à marseille */
+
+#titre-hebergement
+h2{
+	margin-left:80px;	
+}
+
+.marseille {
+  height: 550px;
+  margin-bottom: 50px;
+  display: grid;
+  margin-left:40px;
+  margin-right:40px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
+  grid-gap: 30px;
+  grid-template-areas: 
+    "activity-1 activity-2 activity-4 activity-5"
+    "activity-1 activity-2 activity-4 activity-5"
+    "activity-1 activity-2 activity-4 activity-6"
+    "activity-1 activity-2 activity-4 activity-6"
+    "activity-1 activity-3 activity-4 activity-6"
+    "activity-1 activity-3 activity-4 activity-6";
+}
+
+.marseille .activity__full-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+}
+
+.activity__full-card img {
+  object-fit: cover;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.marseille .card__title {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  padding: 20px 0 20px 5%;
+  margin: 0;
+  bottom: 0;
+}
+
+.englobe {
+  height: 100%;
+  margin: 0;
+}
+
+#img-1 {
+  grid-area: activity-1;
+}
+#img-2 {
+  grid-area: activity-2;  
+}
+#img-3 {
+  grid-area: activity-3;
+}
+#img-4 {
+  grid-area: activity-4;
+}
+#img-5 {
+  grid-area: activity-5;
+}
+#img-6 {
+  grid-area: activity-6;
+}
+
+.marseille .activity__full-card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
 
 /*Footer*/
 section.bottom-page
