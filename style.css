@@ -5,10 +5,6 @@
     src: url(./fonts/Raleway-VariableFont_wght.ttf);
 }
 
-/*responsive design*/
-{@media all and (max-device-width:780px)}
-
-
 /*ajustements generaux*/
 
 *{
@@ -158,7 +154,7 @@ input[type="submit"]
 h3{
     font-size: 0.9rem;
     font-weight: bold;
-    
+    padding-right: 30px;
 }
 
 nav.nav1
@@ -249,7 +245,7 @@ nav.nav1 i
     color: #0065fc;    
 }
 
-.text
+.text-info
 {
  font-size: 0.8rem;
 }
@@ -272,11 +268,14 @@ nav.nav1 i
     margin : 40px 0 60px 0; 
 }
 
-#titre-hebergement h3
+#title-hebergement 
 {
     font-size: 1rem;
     font-weight:bolder;  
-    text-align: left; 
+    padding-top: px;
+    margin: 20px;
+    margin-bottom: 25px;
+   
 }
 
 .around
@@ -302,12 +301,10 @@ nav.nav1 i
     display: flex; 
     justify-content:center;
     flex-direction: column;
-    align-items:center;
     padding: 0px 20px 0px 20px;
     background-color:#f2f2f2; 
     border-radius:25px;
    
-    margin-left: 100px;
     height: 650px;
     width: 100%;
     
@@ -319,13 +316,29 @@ nav.nav1 i
  /*background-size: cover;
  background-position: center;*/
  object-fit: cover;
- width: 250px;
+ width: 220px;
  height: 120px;
- margin: 10px;
+ margin-top: ;
  border: 1px solid #ffffff;
  border-radius: 10px 10px 0 0;
 }
+.heb_full-card{
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    height: 220px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-radius: 10px; 
+    }
 
+.heb_full-card p{
+margin-top: 10px;
+margin-bottom: 10px;
+    }
+    
+ .affiche{
+margin: 35px;
+    }
 /*Couleurs de l'icone etoile*/
 .colorblue{
     color: #0065fc;
@@ -342,7 +355,6 @@ nav.nav1 i
 .img1
 {
   /*background-image: url("./img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");*/ 
-
 }
 
 .img2
@@ -359,7 +371,6 @@ nav.nav1 i
 .img4
 {
 /*background-image: url("./img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");*/
-
 }
 
 
@@ -375,11 +386,12 @@ nav.nav1 i
 .bloc1
 {  
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     /*flex-direction: column;*/
     align-items:center;
     padding: 0px 20px 0px 20px;
     margin-bottom: 25px;
+    margin-top: 10px;
     background-color:#f2f2f2; 
     border-radius:25px;    
 }
@@ -400,42 +412,56 @@ nav.nav1 i
     border-radius:25px;
 }
 /*cadre blanc*/
-.container-hebergements figure {
+.container-hebergements img {
     border: 1px solid#ffffff ;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     text-align: center;
     }  
 
+.hebergements .heb_full-card:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: ease 0.4s;
+      }
+
 /*Section 3: Les plus populaires*/
-aside.Les
+.les-plus-populaires
 {
-    width: 60%;
-    margin-left: 40px;
-    margin-right: 20px;
+    width: 50%;
     background-color: #f2f2f2;
-    padding: 40px;
     height: 650px;
     border-radius: 25px;    
 }
 
-aside h3
+.title-populaire 
 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight:bolder ;
 }
 
+
+.cardtitle{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.tarif{
+    margin-top: 20px  ;
+    margin-bottom:5px;
+    padding-left: 5px;
+}
 .pop-container
 {   display: flex;
     flex-direction: column; 
-    align-items:center ; 
-    
     margin-left: 5px;
-    padding: 40px;
-    width: 350px;  
+    padding: 10px;
     height: 650px;
     border-radius: 25px;
-    background-color: #f2f2f2;   
+    background-color: #f2f2f2;  
 }
 
 /*Ajustements des images*/
@@ -445,13 +471,40 @@ aside h3
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  object-fit: cover;
-  width: 40%;
-  height: 150px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 25px 0 0 25px;
+    object-fit: cover;
+    width: 45%;
+    height: 150px;
+    margin: ;
+    margin-left: ;
+    padding-left: ;
+    border-radius: 20px 0 0 20px;  
 }
+
+.pop_full-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pop_full-card{
+background-color: #ffffff;
+border: 1px solid #ffffff;
+height: 150px;
+margin-left: 30px;
+margin-top: 20px;
+margin-bottom: 20px;
+padding-bottom: 20px;
+padding: 1% 0 1% 0;
+border-radius: 20px;
+width: 330px;
+}
+
+.les-plus-populaires .pop_full-card:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: ease 0.4s;
+  }
 
 .pop1
 {
@@ -466,25 +519,15 @@ aside h3
 /*background-image: url("./img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");*/
 }
 
-/*cadre blanc*/
-.pop-container figure {
+/*cadre blanc
+.pop-container div{
     border-left: 1px solid#ffffff ;
-    background-color: #ffffff;
+    background-color:;
     border-radius: 10px;
-    font-size: 0.9rem;
+    font-size: 0.9rem;*/
     } 
 
-.pop-container figure {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-   
-}
-
-.pop-container figure h4 {
     
-writing-mode: horizontal-tb;
-}
 
 /*Section 4: Activités à Marseille*/
 
@@ -722,3 +765,6 @@ footer p
     height: 150px;
     width: 25%;
 }
+
+/*responsive design*/
+{@media all and (max-device-width:780px)}
