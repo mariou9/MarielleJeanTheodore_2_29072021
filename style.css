@@ -56,7 +56,7 @@ nav.nav{
 
 nav.nav a.lien13{
     font-size: 0.9rem;
-    color: #0065fc;
+    color:#0065fc;
     text-decoration: none;
 }
 
@@ -65,9 +65,15 @@ nav.nav a.lien2{
     color: black;
     text-decoration: none;
 }
+
 .bordure{
-    border-top: 1px solid #0065fc;
+    border-top: 1px solid transparent;
 }
+.bordure:hover{
+    border-top: 1px solid #0065fc;
+    cursor: pointer;
+}
+
 
 /*Section 1 Filtres*/
 /*champ de recherche*/
@@ -151,7 +157,7 @@ input[type="submit"]
 
 /*Filtres*/
 
-h3{
+.title-filtres {
     font-size: 0.9rem;
     font-weight: bold;
     padding-right: 30px;
@@ -166,8 +172,8 @@ nav.nav1
 nav.nav1{
     font-size: 1rem;
     margin-top: 50px;
-    margin-bottom: 50px; ;
-    margin: ;
+    margin-bottom: 50px; ; 
+    
     list-style-type: none;
     font-size: 0.9rem;
     font-weight: bold;
@@ -182,18 +188,19 @@ nav.nav1{
 {
     border: 1px solid #f2f2f2;
     height: 40px;
-    border-radius: 35px;
+    border-radius: 20px;
     margin-right: 20px;
     font-size: 0.8rem;
-    
+    padding-right: 15px;
 }
 
 .ajustement
 {
 margin-left: -2px;   
-border-radius: 25px;
-width: 52px;
+border-radius: 35px;
+width: 40px;
 height: 52px;
+padding-right: ;
 color:#0065fc;
 background-color:#deebff;
 }
@@ -203,6 +210,7 @@ nav.nav1 i
   display: flex;
   justify-content: center;
   align-items: center; 
+ 
 }
 
 .between
@@ -274,8 +282,7 @@ nav.nav1 i
     font-weight:bolder;  
     padding-top: px;
     margin: 20px;
-    margin-bottom: 25px;
-   
+    margin-bottom: 25px;   
 }
 
 .around
@@ -339,6 +346,7 @@ margin-bottom: 10px;
  .affiche{
 margin: 35px;
     }
+
 /*Couleurs de l'icone etoile*/
 .colorblue{
     color: #0065fc;
@@ -352,36 +360,6 @@ margin: 35px;
     background-color: #ffffff;
 }
 
-.img1
-{
-  /*background-image: url("./img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");*/ 
-}
-
-.img2
-{
-/*background-image: url("./img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");*/
-}
-
-.img3
-{
-/*background-image: url("./img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");*/
-}
-
-
-.img4
-{
-/*background-image: url("./img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");*/
-}
-
-
-.img5
-{
-/*background-image: url("./img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");*/
-}
-
-.img6
-{
-}
 
 .bloc1
 {  
@@ -727,7 +705,7 @@ h2{
 }
 
 /*Footer*/
-footer.footer
+section.bottom
 {
     background-color: #f2f2f2;
     width: 100%;
@@ -736,7 +714,7 @@ footer.footer
     margin-right: auto;
     padding-right: 15px;
     padding-left: 20px;
-    padding-bottom: 15px
+    padding-bottom: 10px
 }
 
 footer.footer
@@ -762,9 +740,59 @@ footer p
 }
 .endfoot
 {
-    height: 150px;
+    height: 100px;
     width: 25%;
 }
 
 /*responsive design*/
-{@media all and (max-device-width:780px)}
+@media all and (max-device-width:1280px)
+{
+  nav.nav{
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      text-align: left;
+  }
+
+  .nav.nav1{
+      display: flex;
+      flex-direction: column;
+  }
+  
+.container-hebergements{
+  display: flex;
+  flex-shrink: 1;
+  width: 100%;
+  
+  
+  }
+
+  .bloc1{
+      display: none;
+      width: 90%;
+      flex-wrap: wrap;
+      
+  }
+
+  .bloc2{
+      display: none;
+      width: 90%;
+      flex-wrap: wrap;
+      
+  }
+  .pop-container:last-child{
+      
+
+      
+  }
+
+  .marseille{
+      
+      
+  }
+
+  footer.footer{
+      
+  }
+
+}
