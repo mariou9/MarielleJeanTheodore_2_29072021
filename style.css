@@ -23,6 +23,7 @@ header{
 
 header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -35,6 +36,7 @@ header img{
 }
 header img{
     display: flex;
+
     justify-content: center;
     align-items: center;
 }
@@ -50,6 +52,7 @@ nav.nav{
 
 nav.nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -66,6 +69,9 @@ nav.nav a.lien2{
     text-decoration: none;
 }
 
+header nav.nav a:hover{
+ color: #0065fc;
+}
 .bordure{
     border-top: 1px solid transparent;
 }
@@ -166,6 +172,7 @@ input[type="submit"]
 nav.nav1
 {
     display: flex ;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -276,7 +283,7 @@ nav.nav1 i
     margin : 40px 0 60px 0; 
 }
 
-#title-hebergement 
+#titre-hebergement 
 {
     font-size: 1rem;
     font-weight:bolder;  
@@ -763,22 +770,18 @@ footer p
   display: flex;
   flex-shrink: 1;
   width: 100%;
-  
-  
   }
 
   .bloc1{
       display: none;
       width: 90%;
-      flex-wrap: wrap;
-      
+      flex-wrap: wrap;    
   }
 
   .bloc2{
       display: none;
       width: 90%;
-      flex-wrap: wrap;
-      
+      flex-wrap: wrap;    
   }
   .pop-container:last-child{
       
