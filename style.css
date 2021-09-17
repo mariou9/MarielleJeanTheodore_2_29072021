@@ -176,7 +176,6 @@ transform: scale(1);
 nav.nav1
 {
     display: flex ;
-    
     align-items: center;
 }
 
@@ -207,7 +206,6 @@ margin-left: -2px;
 border-radius: 35px;
 width: 40px;
 height: 52px;
-padding-right: ;
 color:#0065fc;
 background-color:#deebff;
 }
@@ -368,7 +366,6 @@ margin: 35px;
 {
     display: flex; 
     justify-content:space-between;
-    flex-direction: row;
     align-items:center;
     padding: 0px 20px 0px 20px;
     margin-top: 10px;
@@ -376,13 +373,13 @@ margin: 35px;
     border-radius:25px;
 }
 
-/*cadre blanc*/
+/*cadre blanc
 .container-hebergements img {
     border: 1px solid#ffffff ;
     background-color: #ffffff;
     border-radius: 10px 10px 0 0;
     text-align: center;
-    }  
+    }  */
 
 .hebergements .heb_full-card:hover {
         cursor: pointer;
@@ -478,13 +475,13 @@ width: 330px;
     transition: ease 0.4s;
   }
 
- 
+
 /* nouveau code css bloc : activites à marseille */
 
-#titre-hebergement
-h2{
-	margin-left:80px;	
-    
+#title-marseille 
+{
+	margin-left:40px;
+    	   
 }
 
 .marseille {
@@ -602,89 +599,108 @@ footer p
 }
 
 /*responsive design*/
-@media screen and (max-width:1200px)
+@media screen and (max-width:1100px)
 {
  main{
       width: 95%;
   }
-
+.container-hebergements{
+    width: 70%;
+}
+.bloc1{
+    width: auto;
+    padding: 10px;
+}
+.bloc2{
+    width:auto;
+    padding: 15px;
+}
+.heb_full-card{
+    width: auto;
+    height: 220px;
+    
+}
+.hebtitle{
+    font-size: 0.9rem;
+}
+.imgbox{
+    width: 180px;
 }
 
-@media screen and (max-width:900px)
+.affiche{
+    margin-top: 15px;
+}
+.les-plus-populaires{
+    width: 33%;
+}
+.pop_full-card{
+    width: auto;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cardtitle{
+    margin-top: 25px;
+    font-size: 1rem;
+}
+.pop_full-card p{
+   font-size: 0.8rem;
+}
+.icon-star i{
+  width: 5px;  
+}
+}
+
+@media screen and (max-width:960px)
 {
     main{
         width: 90%;
     }
     /*Application du style pour les tablettes*/
  
- .hebergements{
-    display: grid;
-    grid-template-columns: 1fr; 
-    margin: auto;
-    width: auto;
-    height: auto;
-    
-  }
   .container-hebergements{
-    display:flex;
-    flex-direction: column;
-    align-content: center;
-    width: auto;
-    height: auto;
-   background-color: transparent; 
+    width: 65%;
   }
   .bloc1{
-    display: flex;
-    flex-direction: column;
-    align-content: center; 
-    height: auto; 
-    margin-bottom: 8px;
+    width: auto;
+    padding: 10px;
   }
   
   .bloc2{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  height: auto;   
-  margin-top: 5px;
+    width: auto;
+    padding: 10px;
   }
   
   .heb_full-card{
-  box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
-  margin-bottom: 15px;
-  width: 100%;
-  }
+    width: auto;
+    height: auto;   
+}
   
   .imgbox{
-  width: 100%;
-  
+  width: 150px;
   }
-  /*Les plus populaires*/ 
+
+  .hebtitle{
+    font-size: 0.8rem;
+}
+
+  /*Les plus populaires*/
   .les-plus-populaires{
-  display: flex;
-  order: -1;
-  flex-direction: column;
-  align-content: center;
-  width: auto;
-  height: auto;
-  margin: auto;
-  border-radius: 0;
+  width: 30%;
   }
-  
-  .pop-container{
-  display:flex;
-  flex-direction: column;
-  align-content: center;
-  border-radius: 0;
-  margin: auto;
-  
-  } 
-  
+  .cardtitle{
+    margin-top: 25px;
+    font-size: 0.9rem;
+}
+.pop_full-card p{
+   font-size: 0.8rem;
+}
+.icon-star i{
+  width: 2px;  
+}
   /*Activites a Marseille*/
   .marseille{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
   width: 80%;
   height: auto;
   }
@@ -692,47 +708,20 @@ footer p
   .englobe{
     width: auto;  
   }  
-  
-  /*Bas de page*/
-  .renseignements{
-   width: 100%;
-   margin: 3px; 
-   height: 100%;
-  }
-  
-  footer.footer{
-    display: flex;
-    flex-direction:column;
-    justify-content: flex-end;
-    align-content: center;    
-  }
-  
-  footer.footer h3{
-   margin:auto;
-   padding: 10px;
-   text-align: left;
-   
-  }
-  
-  footer.footer p{
-    margin: auto;
-    width: auto;
-  }
-   
-  .endfoot{
-  
-    margin: 0;
-    padding-left: 5px;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    margin-top: 3px;
-    margin-bottom: 5px;
-    width: 100%;  
-    height: 25%;
-  }     
+
+}
+  @media screen and (max-width:840px)
+{
+    main{
+        width: 90%;
+    }
+    .pop_full-card {
+        width: auto;
+     }
 }
 
-@media screen and (max-width:720px)
+
+@media screen and (max-width:870px)
 {
     main{
         width: 90%;
@@ -741,19 +730,145 @@ footer p
     .title-filtres{
         margin-bottom: 15px;
     }
+    
     nav.nav1 {
-        flex-direction: column;    
+        flex-direction: column;   
         align-items: flex-start;
-        margin-bottom: 30px;   
+        margin-bottom: 30px;
+        padding: 10px;   
     } 
     
     .mobile_direction{
         flex-direction: column;
-        align-items: flex-start;
-        
+        align-items: flex-start;   
     }
 
+    .mobile_gap_filtres {
+        margin-bottom:15px ;
+    }
+
+    .hebergements{
+        display: grid;
+        grid-template-columns: 1fr; 
+        margin: auto;
+        width: 100%;
+        height: auto;
+        
+      }
+      .container-hebergements{
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        width: auto;
+        height: auto;
+       background-color: transparent; 
+      }
+      .bloc1{
+        display: flex;
+        flex-direction: column;
+        align-content: center; 
+        height: auto; 
+        margin-bottom: 8px;
+        width: auto;
+      }
+      
+      .bloc2{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      height: auto;   
+      margin-top: 5px;
+      }
+      
+      .imgbox{
+      width:100%;
+      }  
+
+      .heb_full-card{
+        width: auto;
+        box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+        margin-bottom: 15px;
+    }
+
+      /*Les plus populaires*/
+     .les-plus-populaires{
+     display: flex;
+     order: -1;
+     flex-direction: column;
+     align-content: center;
+     width: auto;
+     height: auto;
+     margin: auto;
+     border-radius: 0;
+  }
+  
+    .pop-container{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 0;
+    margin: auto;
+    width: auto;
+    height: auto;
+  } 
+  .pop_full-card{
+      margin: 5px;
+  }
+  .popbox{
+      width: 51%;
+      height: 142px;
+  }
+  
+  /*Activites a Marseille*/
+  .marseille{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+    height: auto;
+    }
     
+    .englobe{
+      width: auto;  
+    }  
+    
+    /*Bas de page*/
+    .renseignements{
+     width: 100%;
+     margin: 3px; 
+     height: 100%;
+    }
+    
+    footer.footer{
+      display: flex;
+      flex-direction:column;
+      justify-content: flex-end;
+      align-content: center;    
+    }
+    
+    footer.footer h3{
+     margin:auto;
+     padding: 10px;
+     text-align: left;
+     
+    }
+    
+    footer.footer p{
+      margin: 10px;
+      width: auto;
+    }
+     
+    .endfoot{
+    
+      margin: 0;
+      padding-left: 5px;
+      padding-bottom: 3px;
+      padding-top: 3px;
+      margin-top: 3px;
+      margin-bottom: 5px;
+      width: 100%;  
+      height: 25%;
+    }      
  }   
 
 @media screen and (max-width:600px)
@@ -791,14 +906,41 @@ footer p
      margin-top: 40px; 
      padding-right: 10px;    
  }
-
+.mobile_gap_filtres {
+    margin-bottom:15px ;
+}
  .bordure:hover{
     border-bottom: 1px solid #0065fc;
     padding-bottom: 30px;
     border-top: 0;
     cursor: pointer;
 }
-
+.hebergements{
+    width: 100%;
+}
+.container-hebergements{
+    width: auto;
+}
+.imgbox{
+    width: 300px;
+}
+.bloc1{
+    margin-bottom: -7px;
+}
+.bloc2{
+    margin-top:-7px;
+}
+.heb_full-card{
+    width: auto;
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+    margin-bottom: 15px;
+}
+.les-plus-populaires{
+    width: 90%;
+}
+.pop-container{
+    width: auto;
+}
 }
 
 @media screen and (max-width:300px)
