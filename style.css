@@ -715,13 +715,87 @@ footer p
     main{
         width: 90%;
     }
-    .pop_full-card {
+
+    .hebergements{
+        display: grid;
+        grid-template-columns: 1fr; 
+        margin: auto;
+        width: 100%;
+        height: auto;
+        
+      }
+      .container-hebergements{
+        display:flex;
+        flex-direction: column;
+        align-content: center;
         width: auto;
+        height: auto;
+       background-color: transparent; 
+      }
+      .bloc1{
+        display: flex;
+        flex-direction: column;
+        align-content: center; 
+        height: auto; 
+        margin-bottom: 8px;
+        width: auto;
+      }
+      
+      .bloc2{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      height: auto;   
+      margin-top: 5px;
+      }
+      
+      .imgbox{
+      width:350px;
+      }  
+
+      .heb_full-card{
+        width: auto;
+        box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+        margin-bottom: 15px;
+    }
+    .pop_full-card {
+        width: 350px;
      }
+
+     .les-plus-populaires{
+        display: flex;
+        order: -1;
+        flex-direction: column;
+        align-content: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+        border-radius: 0;
+     }
+.popbox{
+    width: 220px;
+}
+.marseille{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .englobe{
+      width: auto;  
+    }
+
+    .activity__full-card{
+        width: 350px;
+    }
 }
 
 
-@media screen and (max-width:870px)
+@media screen and (max-width:770px)
 {
     main{
         width: 90%;
@@ -824,19 +898,26 @@ footer p
     display: flex;
     flex-direction: column;
     align-content: center;
-    width: 80%;
+    width: 350px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;   
     }
     
     .englobe{
       width: auto;  
     }  
     
+    .activity__full-card{
+      width: 350px;
+        }
     /*Bas de page*/
     .renseignements{
-     width: 100%;
+     width: auto;
      margin: 3px; 
      height: 100%;
+     padding-right: 0;
+     padding-left: 0;
     }
     
     footer.footer{
@@ -891,8 +972,7 @@ footer p
      display: flex;
      justify-content: center;
      align-items: center;
-     width: 85%;
-     margin-left: 0;
+     width: 65%;
      padding: 25px;    
  }
 .navigation a{
@@ -936,11 +1016,34 @@ footer p
     margin-bottom: 15px;
 }
 .les-plus-populaires{
-    width: 90%;
+    width: 300px;
 }
 .pop-container{
-    width: auto;
+    width: 300px;
 }
+.popbox{
+    width: 120px;
+}
+.pop_full-card{
+    width: 265px;
+}
+.marseille{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;   
+    }
+    
+    .englobe{
+      width: auto;  
+    }  
+    
+    .activity__full-card{
+      width: 250px;
+        }
 }
 
 @media screen and (max-width:300px)
