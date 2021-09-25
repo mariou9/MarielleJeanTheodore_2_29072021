@@ -22,10 +22,13 @@ header{
 }
 
 header{
-    display: flex;
+   /* display: flex;
     
     justify-content: space-between;
-    align-items: center;
+    align-items: center;*/
+    width: 98%;
+    max-width: 1440px;
+    margin: auto;
 }
 
 /*Ajustemens du logo*/
@@ -35,25 +38,49 @@ header img{
     margin-bottom: 10px;
 }
 header img{
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 
 /*navigation*/
 
 .navigation{
-    width: 35%;
+    /*width: 35%;
     margin-left: 20px;
     padding: 25px;
-    height: 90px;   
+    height: 90px; */  
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo . accomodation activities sign-up";
 }
 
-.navigation{
+.navigation img {
+    grid-area: logo;
+  }
+.navigation #accomodation {
+    grid-area: accomodation;
+  }
+.navigation #activities {
+    grid-area: activities;
+}
+.navigation #sign-up {
+    grid-area: sign-up;
+}
+.navbar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+/*.navigation{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-}
+    align-items: center;*/
+
 
 .navigation a.lien13{
     font-size: 0.9rem;
@@ -333,6 +360,13 @@ padding-left: 10px;
  .affiche{
 margin: 35px;
 }
+/*icone euro*/
+
+.euro{
+    background-color: #ffffff;
+    padding:1px;   
+    height: 3px; 
+}
 
 /*icone etoile*/
 .colorblue{
@@ -347,6 +381,8 @@ margin: 35px;
      display:inline-block;
      background-color: #ffffff;
      width: 10px;
+     height: 1px;
+     
 }
 
 /*gestion des  2 blocs hébergements*/
@@ -373,13 +409,6 @@ margin: 35px;
     border-radius:25px;
 }
 
-/*cadre blanc
-.container-hebergements img {
-    border: 1px solid#ffffff ;
-    background-color: #ffffff;
-    border-radius: 10px 10px 0 0;
-    text-align: center;
-    }  */
 
 .hebergements .heb_full-card:hover {
         cursor: pointer;
@@ -414,7 +443,7 @@ margin: 35px;
 
 .tarif{
     margin-top: 20px  ;
-    margin-bottom:5px;
+    margin-bottom:2px;
     padding-left: 5px;
     
 }
@@ -708,7 +737,7 @@ footer p
   }
   
   .englobe{
-    width: auto;  
+    width: auto; 
   }  
 
 }
@@ -739,7 +768,8 @@ footer p
         flex-direction: column;
         align-content: center; 
         height: auto; 
-        margin-bottom: 8px;
+        margin-bottom: -4px;
+        padding: 3px;
         width: auto;
       }
       
@@ -748,7 +778,8 @@ footer p
       flex-direction: column;
       align-content: center;
       height: auto;   
-      margin-top: 5px;
+      margin-top: -4px;
+      padding: 3px;
       }
       
       .imgbox{
@@ -761,6 +792,9 @@ footer p
         margin-bottom: 15px;
     }
     /*les plus populaires*/
+    .pop-container{
+        height: 100%;
+    }
     .pop_full-card {
         width: 350px;
      }
@@ -776,7 +810,8 @@ footer p
         border-radius: 0;
      }
 .popbox{
-    width: 220px;
+    width: 210px;
+    height: 220px;
 }
 /*activites à marseille*/
 .marseille{
@@ -796,10 +831,14 @@ footer p
     .activity__full-card{
         width: 350px;
     }
+.redimension{
+    height: 320px;
+    width: 320px;
+}
 }
 
 
-@media screen and (max-width:770px)
+@media screen and (max-width:768px)
 {
     main{
         width: 90%;
@@ -828,7 +867,7 @@ footer p
     .hebergements{
         display: grid;
         grid-template-columns: 1fr; 
-        margin: auto;
+        margin-left: auto;
         width: 100%;
         height: auto;
         
@@ -846,7 +885,7 @@ footer p
         flex-direction: column;
         align-content: center; 
         height: auto; 
-        margin-bottom: 8px;
+        margin-bottom: -4px;
         width: auto;
       }
       
@@ -855,15 +894,16 @@ footer p
       flex-direction: column;
       align-content: center;
       height: auto;   
-      margin-top: 5px;
+      margin-top: -4px;
       }
       
       .imgbox{
       width:100%;
+      height: 220px;
       }  
 
       .heb_full-card{
-        width: auto;
+        width: 450px;   
         box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
         margin-bottom: 15px;
     }
@@ -890,30 +930,36 @@ footer p
     height: auto;
   } 
   .pop_full-card{
-      margin: 5px;
+      margin: 10px;
+      width: 450px;
   }
   .popbox{
-      width: 51%;
-      height: 142px;
+      width: 290px;
+      height: 150px;
+  }
+  .cardtitle{
+      font-size: 1rem;
   }
   
   /*Activites a Marseille*/
   .marseille{
-    display: flex;
+   display: flex;
     flex-direction: column;
     align-content: center;
-    width: 350px;
+    width: 450px;
     height: auto;
     margin-left: auto;
     margin-right: auto;   
     }
     
     .englobe{
-      width: auto;  
+      width: auto;    
     }  
-    
+    .redimension{
+        height: 300px;
+    }
     .activity__full-card{
-      width: 350px;
+      width: 500px;
         }
     /*Bas de page*/
     .renseignements{
@@ -969,17 +1015,36 @@ footer p
   }
    
   header img{
-    width: 15%;
+    width: 50%;
     margin: 20px;   
 }
  .navigation{
-     display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "logo sign-up"
+    "accomodation activities";
+ }
+ .navigation #accomodation {
+    flex-direction: column-reverse;
+    grid-area: accomodation;
+  }
+  .navigation #activities {
+    flex-direction: column-reverse;
+    grid-area: activities;
+  }
+  .navigation #sign-up {
+    flex-direction: column-reverse;
+    grid-area: sign-up;
+  }
+     /*display: flex;
      justify-content: center;
      align-items: center;
      width: 65%;
      padding: 25px;    
  }
-.navigation a{
+/*.navigation a{
     padding-top: 20px;
     text-align: center;
 }
@@ -992,7 +1057,7 @@ footer p
  }
 .mobile_gap_filtres {
     margin-bottom:15px ;
-}
+}*/
  .bordure:hover{
     border-bottom: 1px solid #0065fc;
     padding-bottom: 30px;
@@ -1008,6 +1073,7 @@ footer p
 }
 .imgbox{
     width: 300px;
+    height: 190px;
 }
 .bloc1{
     margin-bottom: -7px;
@@ -1017,6 +1083,7 @@ footer p
 }
 .heb_full-card{
     width: auto;
+    height: auto;
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
     margin-bottom: 15px;
 }
@@ -1026,6 +1093,7 @@ footer p
 }
 .pop-container{
     width: 300px;
+    height: auto;
 }
 .popbox{
     width: 120px;
@@ -1051,6 +1119,9 @@ footer p
     .activity__full-card{
       width: 250px;
         }
+     .redimension{
+         height: 210px;
+     }   
 }
 
 @media screen and (max-width:300px)
