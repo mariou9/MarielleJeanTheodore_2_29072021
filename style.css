@@ -751,6 +751,7 @@ footer p
         width: auto;
         height: auto;
        background-color: transparent; 
+       
       }
       .bloc1{
         display: flex;
@@ -783,6 +784,7 @@ footer p
     /*les plus populaires*/
     .pop-container{
         height: 100%;
+        width: 650px;
     }
     .pop_full-card {
         width: 350px;
@@ -793,7 +795,7 @@ footer p
         order: -1;
         flex-direction: column;
         align-content: center;
-        width: auto;
+        width: 650px;
         height: auto;
         margin: auto;
         border-radius: 0;
@@ -802,6 +804,18 @@ footer p
     width: 210px;
     height: 220px;
 }
+.title-populaire{
+    margin-bottom: 20px;
+    margin-left: 5px;
+    font-size: 1.6rem;
+}
+
+.tablette_dimension{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;     
+}
+
 /*activites à marseille*/
 .marseille{
     display: flex;
@@ -901,13 +915,20 @@ header{
       
       .imgbox{
       width:100%;
-      height: 150px;
+      height: 220px;
       }  
 
       .heb_full-card{
         width: 450px;   
         box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
         margin-bottom: 20px;
+    }
+    #titre-hebergement{
+        margin-left: 25px;
+        font-size: 1.4rem;
+    }
+    .affiche{
+        margin-left: 20px;
     }
 
       /*Les plus populaires*/
@@ -918,8 +939,8 @@ header{
      align-content: center;
      width: auto;
      height: auto;
-     margin: auto;
-     border-radius: 0;
+     margin-left: 60px;
+     border-radius: 20px;
   }
   
     .pop-container{
@@ -927,41 +948,49 @@ header{
     flex-direction: column;
     align-content: center;
     border-radius: 0;
-    margin: auto;
+    margin: 30px;
     width: auto;
     height: auto;
   } 
   .pop_full-card{
       margin: 10px;
-      width: 450px;
+      width: 530px;
+      height: 150px;
+    
   }
   .popbox{
-      width: 260px;
-      height: auto;
+      width: 65%;
+      height: auto;       
   }
+
+.title-populaire{
+    font-size: 1.3rem;
+}
   .cardtitle{
       font-size: 1rem;
   }
   
   /*Activites a Marseille*/
   .marseille{
+        
    display: flex;
     flex-direction: column;
     align-content: center;
     width: 450px;
     height: auto;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;  
     }
     
     .englobe{
       width: auto;    
+      height: auto;
     }  
     .redimension{
-        height: 300px;
+    height: 300px;
     }
     .activity__full-card{
-      width: 500px;
+      width: auto;
         }
     /*Bas de page*/
     .renseignements{
@@ -1115,22 +1144,29 @@ transform: scale(1);
 }
 /*les plus populaires*/
 .les-plus-populaires{
-    width: 300px;
-    margin-right: 10px;
-    margin-left: 25px;
+    width: 350px;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 13px;
+    border-radius: 0;
 }
 .pop-container{
-    width: 345px;
+    width: auto;
     height: auto;
-    margin-left:-10px ;
-    margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;  
 }
 .popbox{
     width: 120px;
     height: auto;
 }
 .pop_full-card{
-    width: 300px;
+    width: 290px;
+}
+.title-populaire{
+    font-size: 1.3rem;
+    margin: 5px;
+    margin-bottom: 15px;
 }
 /*activites à marseille*/
 .marseille{
@@ -1144,11 +1180,12 @@ transform: scale(1);
     }
     
     .englobe{
-      width: auto;  
+      width: auto;    
     }  
     
     .activity__full-card{
-      width: 250px;
+      width: 230px;
+    height: auto;
         }
      .redimension{
          height: 210px;
@@ -1160,6 +1197,7 @@ transform: scale(1);
     width: 350px;  
     margin-right: 10px;  
     margin-left: 10px;
+    height: 400px;
 }
 .endfoot{
     margin-left: 30px;   
