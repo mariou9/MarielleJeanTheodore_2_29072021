@@ -139,8 +139,8 @@ form
     width:30px ;
     background:#f2f2f2;
     border: 1px;
-    border-radius: 2px;
-    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;   
 }
 
 input[type="search"]
@@ -833,7 +833,20 @@ footer p
         width: 90%;
     }
 /*section 1 presentation du site*/
-    .title-filtres{
+
+header{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 90%;
+}
+.navigation{
+    gap: 10px;
+}
+ .presentation_du_site{
+     margin: 8%;
+ }   
+
+.title-filtres{
         margin-bottom: 15px;
     }
     
@@ -1028,6 +1041,32 @@ footer p
     grid-area: sign-up;
   }
  /*Filtres*/
+
+ h1
+{
+    font-size: 1.4rem;
+    margin-left: 5px;  
+    margin-right: 5px;       
+}
+
+.presentation_du_site{
+    margin-left: 5%;
+}
+
+form{
+    margin-left: 10px;
+}
+
+p{/*champ de recherche*/
+    margin-left: 10px;
+}
+
+input[type="search"]
+{
+    width: 200px;
+    height: 30px;
+    border: 0.5px 0 0 0.5px;
+}
  input[type="submit"]
 {
  display: none;
@@ -1037,9 +1076,9 @@ footer p
 display: block;
 background: #0065fc;
 cursor: pointer;
-border-radius: 0 10px 10px 0;
+border-radius: 10px 10px 10px 10px;
 height: 30px;
-width: 30px;
+width: 35px;
 color:white;
 font-weight: bold;
 font-size: 0.8rem;
@@ -1077,17 +1116,21 @@ transform: scale(1);
 /*les plus populaires*/
 .les-plus-populaires{
     width: 300px;
+    margin-right: 10px;
+    margin-left: 25px;
 }
 .pop-container{
-    width: 320px;
+    width: 345px;
     height: auto;
+    margin-left:-10px ;
+    margin-right: 5px;
 }
 .popbox{
-    width: 100px;
+    width: 120px;
     height: auto;
 }
 .pop_full-card{
-    width: 280px;
+    width: 300px;
 }
 /*activites à marseille*/
 .marseille{
@@ -1109,7 +1152,18 @@ transform: scale(1);
         }
      .redimension{
          height: 210px;
-     }   
+     }  
+     
+/*bas de page*/
+
+.renseignements{
+    width: 350px;  
+    margin-right: 10px;  
+    margin-left: 10px;
+}
+.endfoot{
+    margin-left: 30px;   
+    margin-right: 10px;
 }
 
 @media screen and (max-width:300px)
@@ -1118,5 +1172,13 @@ transform: scale(1);
         width: 90%;
     }
     /*Application du style pour les mobiles de petites tailles*/
+/*bas de page*/
 
+.renseignements{
+    width: 370px; 
+    margin-right: 30px;   
+}
+.endfoot{
+    margin-left: 30px;     
+}
 }
