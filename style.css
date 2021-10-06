@@ -1030,7 +1030,11 @@ border: 1px;
   {
 transform: scale(1);
   }      
- 
+ .mobile_direction{
+     flex-direction: column;
+     align-items: flex-start;
+     
+ }
 /*Hébergements à marseille*/
 .hebergements{
     width: 60%;
