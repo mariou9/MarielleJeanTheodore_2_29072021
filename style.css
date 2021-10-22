@@ -80,22 +80,25 @@ header img{
  color: #0065fc;
 }
 .bordure{
-    border-top: 1px solid transparent;
+    border-top: 3px solid transparent;
     padding-top:30px;
     
 }
 .bordure:hover{
-    border-top: 1px solid #0065fc;
+    border-top: 3px solid #0065fc;
     cursor: pointer;
 }
 
-
+main{
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
+}
 /*Section 1 Filtres*/
 /*champ de recherche*/
 
 .presentation_du_site
 {
-    margin: 3% ;
     margin-top: 100px;
 }
 
@@ -205,7 +208,7 @@ nav.nav1{
 /*Ajustement des icones filtres*/
 .icons
 {
-    border: 1px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     height: 40px;
     border-radius: 20px;
     margin-right: 20px;
@@ -403,7 +406,7 @@ height: 3px;
 /*Section 3: Les plus populaires*/
 .les-plus-populaires
 {
-    width: 50%;
+    width: 60%;
     background-color: #f2f2f2;
     height: 650px;
     border-radius: 25px;    
@@ -616,20 +619,27 @@ footer p
       width: 95%;
      }
  .hebergements{
-    width: 100%;
-      
-      } 
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  row-gap: 30px;      
+   } 
 .container-hebergements{
-    width: 80%;
+    width: 100%;
       }
+
 .bloc1{
     width: auto;
     padding: 10px;
       }
+
 .bloc2{
     width:auto;
     padding: 15px;
       }
+
+.imgbox{
+  width: ;
+}
 
 @media screen and (max-width:1200px)
 {
@@ -643,7 +653,7 @@ footer p
     
     } 
 .container-hebergements{
-    width: 70%;
+    width: 80%;
     }
 .bloc1{
     width: auto;
@@ -670,7 +680,7 @@ footer p
 
 /*les plus populaires*/
 .les-plus-populaires{
-    width: 30%;
+    width: 40%;
   }
 .pop_full-card{
     width: auto;
@@ -694,15 +704,15 @@ footer p
 @media screen and (max-width:992px)
 {
     main{
-        width: 90%;
+        width: 95%;
     }
     /*Application du style pour les tablettes*/
  .hebergements{
-     width: 90%;
+     width: 100%;
      gap: 5px;
  }
   .container-hebergements{
-    width: 65%;
+    width: 80%;
   }
   .bloc1{
     width: auto;
@@ -968,7 +978,7 @@ footer p
 @media screen and (max-width:576px)
 {
     main{
-        width: 90%;
+        width: 92%;
     }
     /*Application du style pour les mobiles*/
  
