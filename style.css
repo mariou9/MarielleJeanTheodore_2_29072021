@@ -610,15 +610,36 @@ footer p
 
 /*Responsive design*/
 
-@media screen and (max-width:1100px)
+@media screen and (max-width:1440px)
 {
  main{
-      width: 90%;
+      width: 95%;
+     }
+ .hebergements{
+    width: 100%;
+      
+      } 
+.container-hebergements{
+    width: 80%;
+      }
+.bloc1{
+    width: auto;
+    padding: 10px;
+      }
+.bloc2{
+    width:auto;
+    padding: 15px;
+      }
+
+@media screen and (max-width:1200px)
+{
+ main{
+      width: 95%;
      }
   /*hebergements à marseille*/
 
 .hebergements{
-    width: 70%;
+    width: 100%;
     
     } 
 .container-hebergements{
@@ -670,7 +691,7 @@ footer p
   }
 }
 
-@media screen and (max-width:960px)
+@media screen and (max-width:992px)
 {
     main{
         width: 90%;
@@ -739,7 +760,7 @@ footer p
   }  
 
 }
-  @media screen and (max-width:900px)
+  @media screen and (max-width:768px)
 {
     main{
         width: 90%;
@@ -795,8 +816,8 @@ footer p
         margin-bottom: 30px;
       
     }
-       
-      .bloc1{
+   
+    .bloc1{
         display: flex;
         justify-content:space-between;
         align-items:center;
@@ -813,8 +834,7 @@ footer p
         align-items:center;
         padding: 0px 20px 0px 20px;
         margin-top: 10px;
-        border-radius:25px;
-     
+        border-radius:25px; 
     }
 
       .imgbox{
@@ -945,7 +965,7 @@ footer p
     }     
 }
 
-@media screen and (max-width:600px)
+@media screen and (max-width:576px)
 {
     main{
         width: 90%;
