@@ -624,13 +624,19 @@ footer p
  .hebergements{
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 1fr;
-  row-gap: 30px;      
+  row-gap: 20px;      
   } 
 .container-hebergements{
-  width: 100%;
+  width: ;
   }
+.imgbox{
+  width: 280px;
+}
+#titre-hebergement{
+  margin: 0px;
+}
 
-.bloc1{
+/*.bloc1{
   width: auto;
   padding: 10px;
   }
@@ -638,7 +644,7 @@ footer p
 .bloc2{
   width:auto;
   padding: 15px;
-  }
+  }*/
 
 @media screen and (max-width:1200px)
 {
@@ -679,7 +685,7 @@ footer p
 
 /*les plus populaires*/
 .les-plus-populaires{
-    width: 60%;
+    width: ;
   }
 
 .pop_full-card{
@@ -826,7 +832,7 @@ footer p
         background-color:#f2f2f2; 
         border-radius:25px;
         height: 650px;
-        width: 90%;
+        width: 100%;
         margin-bottom: 30px;
       
     }
