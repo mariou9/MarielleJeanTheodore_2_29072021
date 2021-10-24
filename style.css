@@ -30,7 +30,7 @@ header{
 /*Ajustemens du logo*/
 header img{
     width: 120px;
-    margin: 25px;
+    margin: 15px;
     margin-bottom: 10px;
 }
 
@@ -109,13 +109,13 @@ div.champ-de-recherche{
 
 h1
 {
-    font-size: 1.2rem;  
+    font-size: 1.5rem;  
     margin-top: 35px;    
 }
 
 p
 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-top: 20px; 
     margin-bottom: 20px;     
 }
@@ -138,8 +138,8 @@ form
 
  i
 {
-    height: 31px;
-    width:30px ;
+    height: 40px;
+    width: 30px;
     background:#f2f2f2;
     border: 1px;
     border-radius: 10px 0 0 10px;
@@ -148,8 +148,8 @@ form
 
 input[type="search"]
 {
-height: 31px;
-width: 160px;
+height: 40px;
+width: 180px;
 border-radius: 1px;
 text-align: center;
 font-weight: bold;
@@ -164,7 +164,7 @@ input[type="submit"]
  background: #0065fc;
  cursor: pointer;
  border-radius: 0 10px 10px 0;
- height: 30px;
+ height: 40px;
  width: 100px;
  color:white;
  font-weight: bold;
@@ -192,6 +192,7 @@ transform: scale(1);
 nav.nav1
 {
     display: flex ;
+    
     align-items: center;
 }
 
@@ -411,8 +412,7 @@ height: 3px;
 
 /*Section 3: Les plus populaires*/
 .les-plus-populaires
-{
-    width: 50%;
+{    
     background-color: #f2f2f2;
     height: 650px;
     border-radius: 25px;    
@@ -433,9 +433,10 @@ height: 3px;
 }
 
 .tarif{
-    margin-top: 20px  ;
+    margin-top: 20px;
     margin-bottom:2px;
     padding-left: 5px;
+    font-size: 0.9rem;
     
 }
 .pop-container
@@ -446,6 +447,14 @@ height: 3px;
     height: 650px;
     border-radius: 20px;
     background-color: #f2f2f2;  
+}
+.pop_cases{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.25fr 1fr 1fr 1fr;
+  row-gap: 0px;
+  height: 90%;
+  width: 90%;
 }
 
 /*Ajustements des images*/
@@ -624,17 +633,25 @@ footer p
  .hebergements{
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 1fr;
-  row-gap: 20px;      
+  row-gap: 20px; 
+  grid-template-areas: "les-plus-populaires"
+  "container-hebergements";     
   } 
 .container-hebergements{
-  width: ;
+  grid-area: container-hebergements;
   }
+
+.les-plus-populaires{
+  grid-area: les-plus-populaires;
+}
 .imgbox{
   width: 290px;
 }
 #titre-hebergement{
   margin: 0px;
 }
+
+
 
 /*.bloc1{
   width: auto;
@@ -654,12 +671,10 @@ footer p
   /*hebergements à marseille*/
 
 .hebergements{
-    width: 100%;
+    width: ;
     gap: 20px;
     } 
-.container-hebergements{
-    width: 90%;
-    }
+
 /*.bloc1{
     width: auto;
     padding: 10px;
@@ -685,7 +700,7 @@ footer p
 
 /*les plus populaires*/
 .les-plus-populaires{
-    width: ;
+    width: 50%;
   }
 
 .pop_full-card{
@@ -718,12 +733,10 @@ footer p
     }
     /*Application du style pour les tablettes*/
  .hebergements{
-     width: 100%;
+     
      gap: 5px;
  }
-  .container-hebergements{
-    width: 80%;
-  }
+  
   /*.bloc1{
     width: auto;
     padding: 10px;
@@ -732,15 +745,19 @@ footer p
   .bloc2{
     width: auto;
     padding: 10px;
+  }
+  .heb_cases{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }*/
-  
   .heb_full-card{
     width: auto;
     height: auto;   
   }
   
   .imgbox{
-  width: 150px;
+  width: 100px;
   }
 
   .hebtitle{
@@ -749,12 +766,13 @@ footer p
 
   /*Les plus populaires*/
   .les-plus-populaires{
-  width: 40%;
+  width: ;
   }
   .cardtitle{
     margin-top: 25px;
     font-size: 0.9rem;
   }
+  
 .pop_full-card{
     width: 220px;
     height: 150px;
@@ -837,7 +855,8 @@ footer p
       
     }
    
-   /* .bloc1{
+    
+    .bloc1{
         display: flex;
         justify-content:space-between;
         align-items:center;
@@ -855,7 +874,7 @@ footer p
         padding: 0px 20px 0px 20px;
         margin-top: 10px;
         border-radius:25px; 
-    }*/
+    }
 
       .imgbox{
       width:170px;
@@ -1077,7 +1096,7 @@ transform: scale(1);
  }
 /*Hébergements à marseille*/
 .hebergements{
-    width: 60%;
+    width: ;
   }
 .container-hebergements{
     display:flex;
@@ -1091,7 +1110,7 @@ transform: scale(1);
     width: 290px;
     height: 130px;
   }
-.bloc1
+.heb_cases
     {
      
         display: flex;
@@ -1104,7 +1123,7 @@ transform: scale(1);
       }
     
 
-.bloc2
+/*.bloc2
     {
      display: flex;
       flex-direction: column;
@@ -1112,7 +1131,7 @@ transform: scale(1);
       height: auto;   
       margin-top: -4px;
       margin-top:-8px;
-    }
+    }*/
 
 
 .heb_full-card{
