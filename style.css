@@ -393,10 +393,14 @@ margin-bottom: 5px;
 padding-left: 10px;
  }
     
- .affiche{
-margin: 35px;
-font-size: 1rem;
-}
+ .affiche a{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+ }
+/*margin: 35px;
+font-size: 1rem;*/
+
 
 /*icone euro*/
 
@@ -527,7 +531,7 @@ height: 3px;
   width: 160px;
   height: 140px;
   padding-left:3.5px;
-  border-radius: 20px 0 0 20px;  
+  border-radius: 20px 0 0 20px;
 }
 
 .pop_full-card{
@@ -717,6 +721,7 @@ footer p
 }
 .pop-container{
   height: 250px;
+  flex-direction: column;
 }
 .imgbox{
   width: 100%;
@@ -830,13 +835,11 @@ footer p
     font-size: 0.9rem;
    }
 .imgbox{
-    width: 100%;
-    
+    width: 100%;  
    }
 
 .affiche{
-    margin-top: 30px;
-    margin-bottom: 20px;
+  
   }
 
 /*les plus populaires*/
@@ -897,7 +900,8 @@ footer p
   }
   .heb_full-card{
     width: 70%; 
-    height: 180px;  
+    height: 180px; 
+    margin-left: 50px; 
   }
   .heb_full-card p{
     margin-top: 5px;
