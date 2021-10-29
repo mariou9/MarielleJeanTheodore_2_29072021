@@ -65,13 +65,13 @@ header img{
     flex-direction: column;
   }
 .navigation a.lien13{
-    font-size: 0.9rem;
+    font-size: 1rem;
     color:#0065fc;
     text-decoration: none;
 }
 
 .navigation a.lien2{
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: black;
     text-decoration: none;
 }
@@ -79,13 +79,14 @@ header img{
 .navigation a:hover{
  color: #0065fc;
 }
-.bordure{
+ .bordure{
     border-top: 3px solid transparent;
     padding-top:30px;
     
 }
-.bordure:hover{
+.bordure-bleue:hover{
     border-top: 3px solid #0065fc;
+    padding-top: 30px;
     cursor: pointer;
 }
 
@@ -139,17 +140,19 @@ form
  i
 {
     height: 40px;
-    width: 30px;
+    width: 40px;
     background:#f2f2f2;
     border: 1px;
-    border-radius: 10px 0 0 10px;
-    padding: 10px;   
+    border-radius: 10px 0 0 10px;   
+    padding: 11px; 
+    
 }
+
 
 input[type="search"]
 {
 height: 40px;
-width: 180px;
+width: 200px;
 border-radius: 1px;
 text-align: center;
 font-weight: bold;
@@ -184,15 +187,32 @@ transform: scale(1);
 /*Filtres*/
 
 .title-filtres {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: bold;
     padding-right: 30px;
+    margin-top: 15px;
 }
 
-nav.nav1
+.filtres_list{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.filtres_list li{
+  display: inline;
+  margin-left: 25px;
+  font-weight: 700;
+  border: solid 2px #f2f2f2;
+  padding: 0 20px 0 0;
+  margin-top: 10px;
+  border-radius: 200px;
+}
+
+/*nav.nav1
 {
     display: flex ;
-    
     align-items: center;
 }
 
@@ -203,32 +223,37 @@ nav.nav1{
     list-style-type: none;
     font-size: 0.9rem;
     font-weight: bold;
-    cursor: pointer;   
-}
+    cursor: pointer;  */ 
+
 
 /*Ajustement des icones filtres*/
 .icons
 {
     border: 2px solid #f2f2f2;
-    height: 40px;
+    height: 60px;
+    width: 60px;
     border-radius: 20px;
-    margin-right: 20px;
+    margin-right: 25px;
     font-size: 0.8rem;
     padding-right: 15px;
 }
 
 .ajustement
 {
-margin-left: -2px; 
+color: #0065fc;
+padding: 18px;
+border-radius: 200px;
+margin-right: 15px;
+/*margin-left: -2px; 
 margin-right: 15px;  
 border-radius: 35px;
 width: 40px;
 height: 52px;
 color:#0065fc;
-background-color:#deebff;
+background-color:#deebff;*/
 }
 
-nav.nav1 i
+/*nav.nav1 i
 { 
   display: flex;
   justify-content: center;
@@ -243,24 +268,33 @@ nav.nav1 i
 }
 
 /*Effets au survol*/
-.items:hover 
-{
-    color:#0065fc;    
+.filtres_list li :hover{
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+.filtres_list li:hover .ajustement{
+  background-color: #ffffff;
 }
 
-.icons:hover > .ajustement
+.items:hover 
+{
+    color:#0065fc; 
+    cursor: pointer;   
+}
+
+/*.icons:hover > .ajustement
 {
 color:white;
 background-color: #0065fc;
 }
 
-nav.nav1 i
+/*nav.nav1 i
 {
     height: 40px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 25px 25px 25px 25px;
-}
+}*/
 
 .circle
 {
@@ -276,7 +310,8 @@ nav.nav1 i
 
 .text-info
 {
- font-size: 0.8rem;
+ font-size: 0.9rem;
+ margin-top: 20px;
 }
 
 /*Section 2*Hebergements à Marseille*/
@@ -293,7 +328,6 @@ nav.nav1 i
 {
     font-weight:bolder; 
     font-size: 1.3rem; 
-    margin: ;
     margin-bottom: 25px;   
 }
 
@@ -433,7 +467,16 @@ height: 3px;
     font-size: 1.3rem;
     font-weight:bolder ;
 }
+.poptitle{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+}
 
+.pop_cases .poptitle{
+  margin: 0;
+}
 .cardtitle{
     margin-bottom: 10px;
     margin-top: 25px;
@@ -465,6 +508,12 @@ height: 3px;
   row-gap: 0px;
   height: 90%;
   width: 90%;
+}
+.pop_cases{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
 }
 
 /*Ajustements des images*/
@@ -641,25 +690,38 @@ footer p
 @media screen and (max-width:1440px)
 {
  .hebergements{
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 1fr;
   row-gap: 10px; 
   grid-template-areas: "les-plus-populaires"
                        "container-hebergements";     
   } 
-.hebergements .container-hebergements{
+.container-hebergements{
   grid-area: container-hebergements;
+  width: 100%;
+  margin-left: 12px;
   }
 
-.hebergements .les-plus-populaires{
+.les-plus-populaires{
   grid-area: les-plus-populaires;
   height: 250px;
+  width: 100%;
+}
+
+.les-plus-populaires{
+  display: flex;
+  justify-content: center;
+  order: -1;
+  margin: 0;
 }
 .pop-container{
   height: 250px;
 }
 .imgbox{
-  width: 290px;
+  width: 100%;
+  height: 120px;
+  background-size: cover;
 }
 
 .heb_cases{
@@ -667,6 +729,8 @@ footer p
 }
 #titre-hebergement{
   margin: 0px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 .pop_cases{
   display: grid;
@@ -674,6 +738,27 @@ footer p
   grid-template-rows: 1fr 3fr;
   column-gap: 25px;
   height: 200px;
+  width: 95%;
+}
+
+.pop_cases .poptitle{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+  grid-area: 1/1/2/-1;
+}
+
+.popbox{
+  width: 30%;
+  margin: 0;
+  height: 100%;
+  background-size: cover;
+  border-radius: 20px 0 0 20px;
+  min-width: 80px;
+}
+
+.pop_full-card{
   width: 95%;
 }
 .marseille{
@@ -726,7 +811,6 @@ footer p
   /*hebergements à marseille*/
 
 .hebergements{
-    width: ;
     gap: 20px;
     } 
 
@@ -739,30 +823,28 @@ footer p
     padding: 10px;
     }*/
 .heb_full-card{
-    width: 190px;
+    width: 100%;
     height: 220px;    
    }
 .hebtitle{
     font-size: 0.9rem;
    }
 .imgbox{
-    width: 190px;
+    width: 100%;
    }
 
 .affiche{
-    margin-top: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 
 /*les plus populaires*/
-.les-plus-populaires{
-    width: ;
-  }
 
 .pop_full-card{
-    width: 245px;
+    width: 95%;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 0px;
+    margin: 0;
   }
 
 .cardtitle{
@@ -771,7 +853,7 @@ footer p
   }
 
 .popbox{
-  width: 100px;
+  width: 50%;
 }
 .pop_full-card p{
    font-size: 0.8rem;
@@ -781,15 +863,18 @@ footer p
   }
 }
 
-@media screen and (max-width:992px)
+@media screen and (max-width:900px)
 {
     main{
-        width: 95%;
+        width: 92%;
     }
     /*Application du style pour les tablettes*/
- .hebergements{
-     
-     gap: 5px;
+
+  .hebergements{
+    gap: 10px;
+  }
+ .container-hebergements{
+   height: 560px;
  }
   
   /*.bloc1{
@@ -800,65 +885,99 @@ footer p
   .bloc2{
     width: auto;
     padding: 10px;
-  }
+  }*/
   .heb_cases{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-  }*/
+    height: 200px;
+  }
   .heb_full-card{
-    width: auto;
-    height: auto;   
+    width: 70%;   
   }
   
   .imgbox{
-  width: 100px;
+  width: 100%;
   }
 
   .hebtitle{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   /*Les plus populaires*/
   .les-plus-populaires{
-  width: ;
+    height: 560px;
+    padding-top: 25px;
   }
+ .les-plus-populaires{
+  display: flex; 
+  justify-content: center;
+  align-items: stretch;
+  height: 560px;
+  gap: 5px;
+  }
+  
+ .pop_cases {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   height: 120px;
+   padding-top: 15px;
+ }
   .cardtitle{
     margin-top: 25px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   
 .pop_full-card{
-    width: 220px;
-    height: 150px;
-    margin-left: 0px;
+    width: 100%;
+    height: 120px;
+    margin: 15px;
   }  
 .pop_full-card p{
-   font-size: 0.8rem;
+   font-size: 0.9rem;
   }  
 .popbox{
-    width: 100px;
+    width: 30%;
+    padding-bottom: 5px;
   }
 .icon-star i{
   width: 2px;  
   }   
   /*Activites a Marseille*/
   .marseille{
-  width: 80%;
-  height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 370px;
+    grid-template-areas: "img-1 img-2"
+                         "img-4 img-3"
+                         "img-5 img-6";
+                     
+  /*width: 80%;*/
   }
   
-  .englobe{
-    width: auto; 
-  }  
+  .affiche{
+    margin-top: 18px;
+  }
 
 }
-  @media screen and (max-width:768px)
+  @media screen and (max-width:600px)
 {
     main{
         width: 90%;
     }
-  
+  /*Applications pour mobiles*/
+    .hebergements{
+      display: grid;
+      grid-template-rows: 1fr auto;  
+    }
+
+    .heb_cases{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
   header{
     margin-right: 20px;
     margin-left: 20px;
@@ -876,7 +995,7 @@ footer p
            margin-bottom: 15px;
        }
        
-       nav.nav1 {
+    /*   nav.nav1 {
            flex-direction: column;   
            align-items: flex-start;
            margin-bottom: 30px;
@@ -887,7 +1006,7 @@ footer p
            margin-bottom:15px ;
        }
        
-/*Hebergements*/
+/*Hebergements
     .hebergements{
         display: grid;
         grid-template-columns: 1fr; 
@@ -911,7 +1030,7 @@ footer p
     }
    
     
-    .bloc1{
+    .heb_cases{
         display: flex;
         justify-content:space-between;
         align-items:center;
@@ -922,7 +1041,7 @@ footer p
       
     }
        
-      .bloc2{  
+    /*  .bloc2{  
         display: flex; 
         justify-content:space-between;
         align-items:center;
@@ -946,7 +1065,7 @@ footer p
     .affiche{
         margin-top: 10px;
     }
-    /*les plus populaires*/
+    /*les plus populaires
     .pop-container{
         height: 90%;
         width: 85%;
@@ -989,7 +1108,7 @@ footer p
        align-items: flex-start;   
      }
 
-/*activites à marseille*/
+/*activites à marseille
 .marseille{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1059,7 +1178,7 @@ footer p
     }     
 }
 
-@media screen and (max-width:576px)
+@media screen and (max-width:600px)
 {
     main{
         width: 92%;
@@ -1095,6 +1214,19 @@ footer p
     flex-direction: column-reverse;
     grid-area: sign-up;
   }
+  .bordure-bleue{
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .bordure-grey{
+    border-bottom: 3px solid #f2f2f2;
+    border-top: none;
+    padding-bottom: 30px;
+    width: 100%;
+  }
  /*Filtres*/
 
  h1
@@ -1119,7 +1251,7 @@ p{/*champ de recherche*/
 input[type="search"]
   {
     width: 200px;
-    height: 30px;
+    height: 40px;
     border: 0.5px 0.5px;
   }
  input[type="submit"]
@@ -1132,7 +1264,7 @@ display: block;
 background: #0065fc;
 cursor: pointer;
 border-radius: 10px 10px 10px 10px;
-height: 30px;
+height: 40px;
 width: 35px;
 color:white;
 font-weight: bold;
@@ -1161,10 +1293,12 @@ transform: scale(1);
     height: auto;
    background-color: transparent; 
   }
+
 .imgbox{
     width: 290px;
     height: 130px;
   }
+
 .heb_cases
     {
      

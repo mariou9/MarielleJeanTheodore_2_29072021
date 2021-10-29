@@ -24,11 +24,13 @@
             <nav class="navigation">
               <a href="#" id="logo"><img src="./img/Reservia@3x.png" alt="logo-reservia"/></a>
              <div class="navbar-link" id="accomodation">
-                <a href="#titre-hebergement" class="lien13 bordure mobile-position">Hébergements</a></div>
+                 <div class="soulignement"></div>
+                <a href="#titre-hebergement" class="lien13 bordure-bleue mobile-position">Hébergements</a></div>
                 <div class="navbar-link" id="activities">
-                   <a href="#title-marseille" class="lien2 bordure mobile-position">Activités</a></div>
+                    <div class="soulignement"></div>
+                   <a href="#title-marseille" class="lien2 bordure-grey mobile-position">Activités</a></div>
                    <div class="navbar-link" id="sign-up">
-                      <a href="#" class="lien13 bordure"><strong>S'inscrire</strong></a></div>
+                      <a href="#" class="lien13 "><strong>S'inscrire</strong></a></div>
             </nav>
     </header>
     
@@ -44,29 +46,37 @@
 
                <form method="POST" action="traitement.php">
 
-                       <div><i class="fas fa-map-marker-alt "></i></div>
+                       <div><i class="fas fa-map-marker-alt"></i></div>
                     <div><input type="search" value="Marseille, France"></div>
                     <div><input type="submit" class="button" value="Rechercher"></div>
                     <button class="fas fa-search" id="mobile_icon_glass"></button> 
                </form>
  
            <div class="filtres">
-             <nav class="nav1"> 
+             <!---<nav class="nav1">--> 
                <h3 class="title-filtres">Filtres</h3>
            
-                <div class="around">
-                     <div class=" mobile_gap_filtres between icons">
-                         <i class="fas fa-money-bill-wave fa-lg ajustement"></i>
-                     <div class="items">Economique</div>
+               <!--<div class="around">-->
+                   
+                   <!--<div class=" mobile_gap_filtres between icons">-->
+                <ul class="filtres_list">
+                        <li class="filtres_btn items"><i class="fas fa-money-bill-wave fa-lg ajustement icons"></i>Economique</li>
+                        
+                        <li class="filtres_btn items"><i class="fas fa-child fa-lg ajustement icons"></i>Familial</li>
+
+                        <li class="filtres_btn items"><i class="fas fa-heart fa-lg ajustement icons"></i>Romantique</li> 
+
+                        <li class="filtres_btn items"><i class="fas fa-dog fa-lg ajustement icons"></i>Animaux autorisés</li>
+                    <!----<div class="items">Economique</li>
                     </div>
             
                      <div class=" mobile_gap_filtres between icons">
                          <i class="fas fa-child fa-lg ajustement"></i>
                     <div class="items">Familial</div>
                     </div>
-                 </div> 
+                <!--- </div> 
                
-                        <div class="mobile_direction around"> <!--Ajustement aux tablettes et aux mobiles-->
+                        <div class="mobile_direction around"> <!--Ajustement aux tablettes et aux mobiles-
                              <div class=" mobile_gap_filtres between icons">
                              <i class="fas fa-heart fa-lg ajustement"></i>
                              <div class="items">Romantique</div>
@@ -76,9 +86,9 @@
                             <i class="fas fa-dog fa-lg ajustement"></i>
                             <div class="items">Animaux autorisés</div>
                             </div>
-                         </div>  
+                         </div>-->
                                
-             </nav>    
+                        </ul>    
         </div>
  
                        <div class="text-info">
@@ -96,7 +106,7 @@
         <div class="heb_cases"> 
         
                  <div class="heb_full-card">
-                     <a href="#" class="heb_case" id="heb-1">
+                     
                     <img class="imgbox" src="./img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge"/>      
                     <h4 class="hebtitle">Auberge de la Cannebière</h4>
                     <p>Nuit à partir de 25 <i class="fas fa-euro-sign fa-xs euro"></i></p>
@@ -107,12 +117,12 @@
                         <i class="fas fa-star fa-xs colorblue"></i>
                         <i class="fas fa-star fa-xs colorgrey"></i>
                     </div>
-                 </a>
+                 
                 </div>
            
            
                 <div class="heb_full-card" >
-                    <a href="#" class="heb_case" id="heb-2">
+                    
                     <img class="imgbox" src="./img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port"/>
                     <h4 class="hebtitle" >Hôtel du port</h4>
                     <p>Nuit à partir de 52<i class="fas fa-euro-sign fa-xs euro"></i></p>
@@ -124,12 +134,12 @@
                         <i class="fas fa-star fa-xs colorblue"></i>
                         <i class="fas fa-star fa-xs colorblue"></i>   
                    </div>
-                   </a>
+                   
                 </div>
            
                 
                 <div class="heb_full-card">
-                    <a href="#" class="heb_case" id="heb-3">
+                    
                      <img class="imgbox" src="./img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes"/>
                      <h4 class="hebtitle" >Hôtel les mouettes</h4>
                      <p>Nuit à partir de 76 <i class="fas fa-euro-sign fa-xs euro"></i></p>
@@ -140,7 +150,7 @@
                         <i class="fas fa-star fa-xs colorblue"></i>
                         <i class="fas fa-star fa-xs colorgrey"></i>
                        </div>  
-                 </a>
+                 
                </div> 
                 
             <!--</div>   
@@ -148,7 +158,7 @@
             <div class="bloc2 ">-->
         
                  <div class="heb_full-card">
-                    <a href="#" class="heb_case" id="heb-4">
+                    
                      <img class="imgbox" src="./img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel de la mer"/>  
                      <h4 class="hebtitle" > Hôtel de la mer</h4>
                      <p>Nuit à partir de 46 <i class="fas fa-euro-sign fa-xs euro"></i></p>
@@ -159,12 +169,12 @@
                         <i class="fas fa-star fa-xs colorgrey"></i>
                         <i class="fas fa-star fa-xs colorgrey"></i>
                         </div> 
-                    </a>
+                    
                 </div>
            
           
                <div class="heb_full-card">
-                     <a href="#" class="heb_case" id="heb-5">
+                     
                      <img class="imgbox" src="./img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="aubergele panier"/>   
                      <h4 class="hebtitle" >Auberge le panier</h4>
                      <p>Nuit à partir de 23<i class="fas fa-euro-sign fa-xs euro"></i></p>
@@ -175,7 +185,7 @@
                         <i class="fas fa-star fa-xs colorblue"></i>
                         <i class="fas fa-star fa-xs colorgrey"></i>
                        </div> 
-                    </a> 
+                     
                 </div>  
               
       
@@ -192,7 +202,7 @@
                        <i class="fas fa-star fa-xs colorblue"></i>       
                       </div> 
                 </div>
-                </a>                
+                                
             </div>
 
                       <h5 class="affiche">Afficher plus</h5>
@@ -206,14 +216,14 @@
       
             <div class="pop-container">       
                 
-                    <div class="between tablette_dimension">
+                   <div class="poptitle between tablette-dimension">
                         <h2 class="title-populaire">Les plus populaires </h2>
-                        <div><i class="fas fa-chart-line fa-lg icon"></i></div> 
+                        <i class="fas fa-chart-line fa-lg icon"></i>
                     </div> 
                 <div class="pop_cases">
-                   <div class="pop_full-card"> 
-                       <img class="popbox tablette_popimg" src="./img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel le soleil"/>    
-                     <div >
+                        <div class="pop_full-card"> 
+                        <img class="popbox tablette_popimg" src="./img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel le soleil"/>    
+                        <div >
                        <h4 class="cardtitle"> Hôtel le soleil du matin</h4>
                        <p class="tarif">Nuit à partir de 128<i class="fas fa-euro-sign fa-xs euro"></i> </p>
                         <div class="icon-star" >
