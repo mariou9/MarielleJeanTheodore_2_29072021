@@ -704,7 +704,7 @@ footer p
 .container-hebergements{
   grid-area: container-hebergements;
   width: 100%;
-  margin-left: 12px;
+  margin-left:8px;
   }
 
 .les-plus-populaires{
@@ -720,8 +720,9 @@ footer p
   margin: 0;
 }
 .pop-container{
+  display: flex;
   height: 250px;
-  flex-direction: column;
+
 }
 .imgbox{
   width: 100%;
@@ -739,8 +740,8 @@ footer p
 }
 .pop_cases{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
   column-gap: 25px;
   height: 200px;
   width: 95%;
@@ -765,6 +766,11 @@ footer p
 
 .pop_full-card{
   width: 95%;
+}
+
+.tablette_popimg{
+  margin-left: -75px;
+  height: 142px;
 }
 .marseille{
   display: grid;
@@ -855,7 +861,6 @@ footer p
     margin-top: 25px;
     font-size: 1rem;
   }
-
 .popbox{
   width: 50%;
   margin-left: 0;
@@ -866,6 +871,10 @@ footer p
 .icon-star i{
   width: 5px;  
   }
+
+.tablette_popimg{
+  margin-left: -75px;
+}
 }
 
 @media screen and (max-width:900px)
@@ -879,7 +888,7 @@ footer p
     gap: 10px;
   }
  .container-hebergements{
-   height: 670px;
+   height: 680px;
  }
   
   /*.bloc1{
@@ -915,7 +924,10 @@ footer p
     font-size: 1rem;
     margin-bottom: 5px;
   }
+.affiche a{
+  font-size: 0.9rem;
 
+}
   /*Les plus populaires*/
   .les-plus-populaires{
     height: 560px;
@@ -951,15 +963,15 @@ footer p
   }  
 .popbox{
     width: 30%;
-    padding-bottom: 5px;
-    
+    padding-bottom: 5px;  
   }
 .icon-star i{
   width: 2px;  
   }  
   
-  .affiche{
-    margin-bottom: 0px;
+  .tablette_popimg{
+    margin-left: -75px;
+    width: 25%;
   }
   /*Activites a Marseille*/
   .marseille{
