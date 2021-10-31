@@ -512,13 +512,13 @@ height: 3px;
   row-gap: 0px;
   height: 90%;
   width: 90%;
+  margin: 0;
 }
-.pop_cases{
+/*.pop_cases{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 0;
-}
+  margin: 0;*/
 
 /*Ajustements des images*/
 .popbox
@@ -741,7 +741,7 @@ footer p
 .pop_cases{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: auto;
+  grid-template-rows: 1fr 1fr;
   column-gap: 25px;
   height: 200px;
   width: 95%;
@@ -756,21 +756,21 @@ footer p
 }
 
 .popbox{
-  width: 30%;
+  width: 50%;
   margin: 0;
   height: 100%;
   background-size: cover;
   border-radius: 20px 0 0 20px;
-  min-width: 80px;
+  min-width: 33%;
 }
 
 .pop_full-card{
   width: 95%;
 }
 
-.tablette_popimg{
-  margin-left: -75px;
-  height: 142px;
+/*.tablette_popimg{
+  margin-left: -65px;
+  height: 142px;*/
 }
 .marseille{
   display: grid;
@@ -843,11 +843,6 @@ footer p
 .imgbox{
     width: 100%;  
    }
-
-.affiche{
-  
-  }
-
 /*les plus populaires*/
 
 .pop_full-card{
@@ -872,9 +867,9 @@ footer p
   width: 5px;  
   }
 
-.tablette_popimg{
+/*.tablette_popimg{
   margin-left: -75px;
-}
+}*/
 }
 
 @media screen and (max-width:900px)
@@ -885,7 +880,7 @@ footer p
     /*Application du style pour les tablettes*/
 
   .hebergements{
-    gap: 10px;
+    gap: 15px;
   }
  .container-hebergements{
    height: 680px;
@@ -961,17 +956,18 @@ footer p
 .pop_full-card p{
    font-size: 0.9rem;
   }  
-.popbox{
-    width: 30%;
-    padding-bottom: 5px;  
+.popbox{/*images des cartes*/
+    width: 40%;
+    height: 115px;
+    padding-bottom: 5px; 
   }
 .icon-star i{
   width: 2px;  
   }  
   
-  .tablette_popimg{
-    margin-left: -75px;
-    width: 25%;
+  .tablette_popimg{/*IMAges des cartes*/
+    margin-left: -80px;
+    height:115px ;
   }
   /*Activites a Marseille*/
   .marseille{
@@ -981,32 +977,21 @@ footer p
     margin-bottom: 370px;
     grid-template-areas: "img-1 img-2"
                          "img-4 img-3"
-                         "img-5 img-6";
-                     
-  /*width: 80%;*/
+                         "img-5 img-6";                    
   }
   
   .affiche{
     margin-top: 18px;
   }
-
 }
-  @media screen and (max-width:600px)
+ 
+@media screen and (max-width:600px)
 {
     main{
         width: 90%;
     }
   /*Applications pour mobiles*/
-    .hebergements{
-      display: grid;
-      grid-template-rows: 1fr auto;  
-    }
-
-    .heb_cases{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
+  
   header{
     margin-right: 20px;
     margin-left: 20px;
@@ -1020,7 +1005,7 @@ footer p
         margin: 8%;
     }   
    
-   .title-filtres{
+.title-filtres{
            margin-bottom: 15px;
        }
        
@@ -1168,7 +1153,7 @@ footer p
     width: 300px;
     }
 
-     /*Bas de page*/
+     /*Bas de page*
     .renseignements{
      width: 100%;
      margin: 3px; 
@@ -1204,21 +1189,10 @@ footer p
       margin-bottom: 5px;
       width: 100%;  
       height: 25%;
-    }     
-}
+    }   */  
 
-@media screen and (max-width:600px)
-{
-    main{
-        width: 92%;
-    }
-    /*Application du style pour les mobiles*/
- 
-  /*Entete*/
-  header{
-      margin: auto;    
-  }
-   
+
+  /*Entete*/  
   header img{
     width: 60%;
     margin: 20px;   
@@ -1311,16 +1285,27 @@ transform: scale(1);
      
  }
 /*Hébergements à marseille*/
+
 .hebergements{
-    width: ;
-  }
+  display: grid;
+  grid-template-rows: 1fr auto;  
+}
+#titre-hebergement{
+  margin-left: 40px;
+}
+.heb_cases{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 .container-hebergements{
     display:flex;
     flex-direction: column;
-    align-content: center;
+    align-content: ;
     width: auto;
     height: auto;
    background-color: transparent; 
+   margin-left: -10px;
   }
 
 .imgbox{
@@ -1328,16 +1313,14 @@ transform: scale(1);
     height: 130px;
   }
 
-.heb_cases
-    {
-     
-        display: flex;
-        flex-direction: column;
-        align-content: center; 
-        height: auto; 
-        margin-bottom: 4px;
-        width: auto;
-        margin-bottom: 3px;
+.heb_cases{
+      display: flex;
+      flex-direction: column;
+      align-content: center; 
+      height: auto; 
+      margin-bottom: 4px;
+      width: auto;
+      margin-bottom: 3px;
       }
     
 
@@ -1353,32 +1336,30 @@ transform: scale(1);
 
 
 .heb_full-card{
-    width: auto;
+    width: 290px;
     height: auto;
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
     margin-bottom: 20px;
 }
 /*les plus populaires*/
 .les-plus-populaires{
-    width: 345px;
-    height: auto;
-    margin-right: 5px;
-    margin-left: 10px;
+    width: 100%;
+  /*  height: auto;*/  
     border-radius: 0;
    }
 .pop-container{
     width: auto;
     height: auto;
-    margin-left: 5px;
+    margin-left: px;
     margin-right: 5px;  
    }
 .popbox{
-    width: 122px;
-    height: 142px;
-    margin-left: 2px;
+    width: 145px;
+    height: 115px;
+    min-width: 145px;
    }  
 .pop_full-card{
-    width: 290px;
+    width: 350px;
     margin-left: 10px;
    }
 .title-populaire{
@@ -1387,37 +1368,49 @@ transform: scale(1);
     margin-bottom: 15px;
    } 
 .tablette_popimg{
-    padding-left: 0;
-    margin-left: 5px;
-    height: 140px;
+    padding-left: ;
+    margin-left:-20px;
+    height: 110px;
+    
    }
 .tarif{
     margin-left: -2px;
    }
+
+.affiche a{
+  margin-left: 35px;
+}
 /*activites à marseille*/
 .marseille{
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: 
+  "img-1"
+  "img-2"
+  "img-3"
+  "img-4"
+  "img-5"
+  "img-6";
+  height: 1500px;
+  margin-bottom: 350px;
     
-    display: flex;
+   /* display: flex;
     flex-direction: column;
     align-content: center;
     width: 300px;
     height: auto;
     margin-left: auto;
-    margin-right: auto;  
-    }
-    
-    .englobe{
-      width: auto;    
-    }  
-    
-    .activity__full-card{
-      width: 230px;
+    margin-right: auto; 
+    margin-bottom: 350px; */
+  }
+        
+.activity__full-card{
+    width: 230px;
     height: auto;
-        }
-     .redimension{
-         height: 210px;
-     }  
-     
+  }
+    
 /*bas de page*/
 
 .renseignements{
@@ -1428,6 +1421,43 @@ transform: scale(1);
     margin-left: 30px;   
     margin-right: 10px;
    }
+    
+    .renseignements{
+     width: 100%;
+     margin: 3px; 
+     height: 90%;
+     padding-right: 0;
+     padding-left: 0;
+    }
+    
+    footer.footer{
+      display: flex;
+      flex-direction:column;
+      justify-content: flex-end;
+      align-content: center;    
+    }
+    
+    footer.footer h3{
+     margin:auto;
+     padding: 10px;
+     text-align: left;
+    }
+    
+    footer.footer p{
+      margin: 10px;
+      width: auto;
+    }
+     
+    .endfoot{
+      margin-left: 15px;
+      padding-left: 10px;
+      padding-bottom: 3px;
+      padding-top: 3px;
+      margin-top: 3px;
+      margin-bottom: 5px;
+      width: 100%;  
+      height: 25%;
+    }   
 }
 
 @media screen and (max-width:300px)
@@ -1436,7 +1466,8 @@ transform: scale(1);
         width: 90%;
     }
     /*Application du style pour les mobiles de petites tailles*/
-/*bas de page*/
+
+    /*bas de page*/
 
 .renseignements{
     width: 370px; 
@@ -1444,5 +1475,5 @@ transform: scale(1);
     }
 .endfoot{
     margin-left: 30px;     
-    }
+    }      
 }
