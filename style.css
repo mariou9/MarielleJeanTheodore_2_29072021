@@ -22,7 +22,7 @@ header{
 }
 
 header{
-    width: 99%;
+    width: 100%;
     max-width: 1440px;
     margin: auto;
 }
@@ -30,7 +30,7 @@ header{
 /*Ajustemens du logo*/
 header img{
     width: 120px;
-    margin: 15px;
+    margin: 20px;
     margin-bottom: 10px;
 }
 
@@ -44,6 +44,7 @@ header img{
     grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "logo . accomodation activities sign-up";
+    grid-gap: 10px;
 }
 
 .navigation img {
@@ -210,22 +211,6 @@ transform: scale(1);
   border-radius: 200px;
 }
 
-/*nav.nav1
-{
-    display: flex ;
-    align-items: center;
-}
-
-nav.nav1{
-    font-size: 1rem;
-    margin-top: 30px;
-    margin-bottom: 50px; ; 
-    list-style-type: none;
-    font-size: 0.9rem;
-    font-weight: bold;
-    cursor: pointer;  */ 
-
-
 /*Ajustement des icones filtres*/
 .icons
 {
@@ -244,27 +229,6 @@ color: #0065fc;
 padding: 18px;
 border-radius: 200px;
 margin-right: 15px;
-/*margin-left: -2px; 
-margin-right: 15px;  
-border-radius: 35px;
-width: 40px;
-height: 52px;
-color:#0065fc;
-background-color:#deebff;*/
-}
-
-/*nav.nav1 i
-{ 
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-}
-
-.between
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 /*Effets au survol*/
@@ -281,20 +245,6 @@ background-color:#deebff;*/
     color:#0065fc; 
     cursor: pointer;   
 }
-
-/*.icons:hover > .ajustement
-{
-color:white;
-background-color: #0065fc;
-}
-
-/*nav.nav1 i
-{
-    height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 25px 25px 25px 25px;
-}*/
 
 .circle
 {
@@ -398,9 +348,6 @@ padding-left: 10px;
    color: black;
    font-weight: bold;
  }
-/*margin: 35px;
-font-size: 1rem;*/
-
 
 /*icone euro*/
 
@@ -425,29 +372,6 @@ height: 3px;
      width: 10px;
      height: 1px;    
 }
-
-/*gestion des  2 blocs hébergements
-.bloc1
-{  
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    padding: 0px 20px 0px 20px;
-    margin-bottom: 25px;
-    margin-top: 10px;
-    border-radius:25px;    
-}
-
-.bloc2
-{
-    display: flex; 
-    justify-content:space-between;
-    align-items:center;
-    padding: 0px 20px 0px 20px;
-    margin-top: 10px;
-    border-radius:25px;
-}*/
-
 .hebergements .heb_full-card:hover {
         cursor: pointer;
         transform: scale(1.03);
@@ -514,11 +438,6 @@ height: 3px;
   width: 90%;
   margin: 0;
 }
-/*.pop_cases{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 0;*/
 
 /*Ajustements des images*/
 .popbox
@@ -565,7 +484,6 @@ width: 330px;
     transform: scale(1.03);
     transition: ease 0.4s;
   }
-
 
 /*Activites à marseille */
 
@@ -768,9 +686,6 @@ footer p
   width: 95%;
 }
 
-/*.tablette_popimg{
-  margin-left: -65px;
-  height: 142px;*/
 }
 .marseille{
   display: grid;
@@ -804,15 +719,6 @@ footer p
   max-height: 270px;
   min-height: 270px;
 }
-/*.bloc1{
-  width: auto;
-  padding: 10px;
-  }
-
-.bloc2{
-  width:auto;
-  padding: 15px;
-  }*/
 
 @media screen and (max-width:1200px)
 {
@@ -825,14 +731,6 @@ footer p
     gap: 20px;
     } 
 
-/*.bloc1{
-    width: auto;
-    padding: 10px;
-    }
-.bloc2{
-    width:auto;
-    padding: 10px;
-    }*/
 .heb_full-card{
     width: 100%;
     height: 220px;    
@@ -866,10 +764,6 @@ footer p
 .icon-star i{
   width: 5px;  
   }
-
-/*.tablette_popimg{
-  margin-left: -75px;
-}*/
 }
 
 @media screen and (max-width:900px)
@@ -879,22 +773,16 @@ footer p
     }
     /*Application du style pour les tablettes*/
 
+  header{
+    width: 95%;
+  }
+
   .hebergements{
     gap: 15px;
   }
  .container-hebergements{
    height: 680px;
- }
-  
-  /*.bloc1{
-    width: auto;
-    padding: 10px;
-  }
-  
-  .bloc2{
-    width: auto;
-    padding: 10px;
-  }*/
+ } 
   .heb_cases{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -921,7 +809,6 @@ footer p
   }
 .affiche a{
   font-size: 0.9rem;
-
 }
   /*Les plus populaires*/
   .les-plus-populaires{
@@ -944,7 +831,7 @@ footer p
    padding-top: 15px;
  }
   .cardtitle{
-    margin-top: 25px;
+    margin-top: 10px;
     font-size: 1rem;
   }
   
@@ -965,7 +852,7 @@ footer p
   width: 2px;  
   }  
   
-  .tablette_popimg{/*IMAges des cartes*/
+  .tablette_popimg{/*Images des cartes*/
     margin-left: -80px;
     height:115px ;
   }
@@ -993,209 +880,16 @@ footer p
   /*Applications pour mobiles*/
   
   header{
-    margin-right: 20px;
-    margin-left: 20px;
-    width: 80%;
+    margin: 20px;
+    width: 90%;
    }
 .navigation{
     gap: 15px;
-   }
-/*Section 1 Presentation du site*/
-.presentation_du_site{
-        margin: 8%;
-    }   
-   
-.title-filtres{
-           margin-bottom: 15px;
-       }
-       
-    /*   nav.nav1 {
-           flex-direction: column;   
-           align-items: flex-start;
-           margin-bottom: 30px;
-           padding: 10px;   
-       } 
-       
-       .mobile_gap_filtres {
-           margin-bottom:15px ;
-       }
-       
-/*Hebergements
-    .hebergements{
-        display: grid;
-        grid-template-columns: 1fr; 
-        margin: auto;
-        width: 90%;
-        height:auto;
-        gap: 20px;  
-      }
-
-    .container-hebergements{    
-        display: flex; 
-        justify-content:center;
-        flex-direction: column;
-        padding: 0px 20px 0px 20px;
-        background-color:#f2f2f2; 
-        border-radius:25px;
-        height: 650px;
-        width: 100%;
-        margin-bottom: 30px;
-      
-    }
-   
-    
-    .heb_cases{
-        display: flex;
-        justify-content:space-between;
-        align-items:center;
-        padding: 0px 20px 0px 20px;
-        margin-bottom: 25px;
-        margin-top: 10px;
-        border-radius:25px; 
-      
-    }
-       
-    /*  .bloc2{  
-        display: flex; 
-        justify-content:space-between;
-        align-items:center;
-        padding: 0px 20px 0px 20px;
-        margin-top: 10px;
-        border-radius:25px; 
-    }
-
-      .imgbox{
-      width:170px;
-      
-      }  
-
-      .heb_full-card{
-        width: 170px;
-        height: 220px;
-        box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
-        margin-bottom: 15px;
-        
-    }
-    .affiche{
-        margin-top: 10px;
-    }
-    /*les plus populaires
-    .pop-container{
-        height: 90%;
-        width: 85%;
-    }
-    .pop_full-card {
-        width: 480px;
-        border: none;
-     }
-
-     .les-plus-populaires{
-        display: flex;
-        order: -1;
-        flex-direction: column;
-        align-content: center;
-        width: 85%;
-        height: auto;
-        margin: 20px;
-        border-radius: 25px;
-     }
-     .popbox{
-        width: 225px;
-        height: 140px;         
-     }
-
-    .tablette_popimg{
-        margin-left: -75px;
-        width: 225px;
-        padding-left: 0;
-    } 
-
-     .title-populaire{
-        margin-bottom: 20px;
-        margin-left: 5px;
-        font-size: 1.4rem;
-     }
-
-     .tablette_dimension{
-       display: flex;
-       justify-content: space-between;
-       align-items: flex-start;   
-     }
-
-/*activites à marseille
-.marseille{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    margin-bottom: 25px;
-    margin-left: 50px;
-    margin-right:-25px;
-    gap: 20px;
-    grid-template-areas: 
-  "activity-1 activity-2"
-  "activity-4 activity-3"
-  "activity-5 activity-6";
-}  
-    .marseille{
-        width: 350px; 
-    }
-
-    .englobe{
-      width: 300px; 
-      height: 250px;   
-    }
-
-    .activity__full-card{
-        width: 250px;
-    }
-    .redimension{
-    height: 250px;
-    width: 300px;
-    }
-
-     /*Bas de page*
-    .renseignements{
-     width: 100%;
-     margin: 3px; 
-     height: 90%;
-     padding-right: 0;
-     padding-left: 0;
-    }
-    
-    footer.footer{
-      display: flex;
-      flex-direction:column;
-      justify-content: flex-end;
-      align-content: center;    
-    }
-    
-    footer.footer h3{
-     margin:auto;
-     padding: 10px;
-     text-align: left;
-    }
-    
-    footer.footer p{
-      margin: 10px;
-      width: auto;
-    }
-     
-    .endfoot{
-      margin-left: 15px;
-      padding-left: 10px;
-      padding-bottom: 3px;
-      padding-top: 3px;
-      margin-top: 3px;
-      margin-bottom: 5px;
-      width: 100%;  
-      height: 25%;
-    }   */  
-
-
+   } 
   /*Entete*/  
   header img{
     width: 60%;
-    margin: 20px;   
+    margin: 0 20px 20px 20px;   
 }
  .navigation{
     display: grid;
@@ -1216,6 +910,12 @@ footer p
   .navigation #sign-up {
     flex-direction: column-reverse;
     grid-area: sign-up;
+  }
+
+  .navigation a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .bordure-bleue{
     border-bottom: 3px solid #0065fc;
@@ -1290,9 +990,6 @@ transform: scale(1);
   display: grid;
   grid-template-rows: 1fr auto;  
 }
-#titre-hebergement{
-  margin-left: 40px;
-}
 .heb_cases{
   display: grid;
   grid-template-columns: 1fr;
@@ -1301,7 +998,6 @@ transform: scale(1);
 .container-hebergements{
     display:flex;
     flex-direction: column;
-    align-content: ;
     width: auto;
     height: auto;
    background-color: transparent; 
@@ -1323,23 +1019,14 @@ transform: scale(1);
       margin-bottom: 3px;
       }
     
-
-/*.bloc2
-    {
-     display: flex;
-      flex-direction: column;
-      align-content: center;
-      height: auto;   
-      margin-top: -4px;
-      margin-top:-8px;
-    }*/
-
-
 .heb_full-card{
     width: 290px;
     height: auto;
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
     margin-bottom: 20px;
+}
+.heb_full-card p{
+  padding-left: 0;
 }
 /*les plus populaires*/
 .les-plus-populaires{
@@ -1350,13 +1037,13 @@ transform: scale(1);
 .pop-container{
     width: auto;
     height: auto;
-    margin-left: px;
     margin-right: 5px;  
    }
 .popbox{
     width: 145px;
-    height: 115px;
+    height: 110px;
     min-width: 145px;
+    padding-bottom: 0;
    }  
 .pop_full-card{
     width: 350px;
@@ -1368,7 +1055,6 @@ transform: scale(1);
     margin-bottom: 15px;
    } 
 .tablette_popimg{
-    padding-left: ;
     margin-left:-20px;
     height: 110px;
     
@@ -1394,16 +1080,7 @@ transform: scale(1);
   "img-5"
   "img-6";
   height: 1500px;
-  margin-bottom: 350px;
-    
-   /* display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 300px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-bottom: 350px; */
+  margin-bottom: 350px;  
   }
         
 .activity__full-card{
@@ -1434,7 +1111,8 @@ transform: scale(1);
       display: flex;
       flex-direction:column;
       justify-content: flex-end;
-      align-content: center;    
+      align-content: center; 
+      width: 100%;   
     }
     
     footer.footer h3{
@@ -1470,8 +1148,8 @@ transform: scale(1);
     /*bas de page*/
 
 .renseignements{
-    width: 370px; 
-    margin-right: 30px;   
+    width: 100%; 
+      
     }
 .endfoot{
     margin-left: 30px;     
