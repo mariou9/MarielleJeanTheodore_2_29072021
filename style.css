@@ -11,7 +11,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "raleway",sans-serif;
+    font-family: "raleway",sans-serif;  
+}
+
+body{
+  max-width: 1440px;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
 
 /*header*/
@@ -49,6 +59,7 @@ header img{
 
 .navigation img {
     grid-area: logo;
+    margin: 20px;
   }
 .navigation #accomodation {
     grid-area: accomodation;
@@ -85,11 +96,11 @@ header img{
     padding-top:30px;
     
 }
-.bordure-bleue:hover{
+/*.bordure-bleue:hover{
     border-top: 3px solid #0065fc;
     padding-top: 30px;
     cursor: pointer;
-}
+}*/
 
 main{
   width: 98%;
@@ -101,12 +112,12 @@ main{
 
 .presentation_du_site
 {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 div.champ-de-recherche{
     
-    margin: auto;
+    margin: 10px;
 }
 
 h1
@@ -134,33 +145,34 @@ form
 {
     width: 400px;
     border-radius: 10px;
-    height: 50px;  
+    height: 50px; 
+    margin: 10px; 
     
 }
 
- i
+.site
 {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     background:#f2f2f2;
     border: 1px;
     border-radius: 10px 0 0 10px;   
-    padding: 11px; 
-    
+    padding: 17px;     
 }
 
 
-input[type="search"]
+input[type="text"]
 {
-height: 40px;
-width: 200px;
+height: 50px;
+width: 220px;
 border-radius: 1px;
 text-align: center;
 font-weight: bold;
-font-size: 0.8rem;
+font-size: 1rem;
 color: black;
 border: 0.5px solid #f2f2f2;
-padding-left: 20px;
+padding-left: px;
+font-weight: 600;
 }
 
 input[type="submit"]
@@ -168,7 +180,7 @@ input[type="submit"]
  background: #0065fc;
  cursor: pointer;
  border-radius: 0 10px 10px 0;
- height: 40px;
+ height: 50px;
  width: 100px;
  color:white;
  font-weight: bold;
@@ -190,8 +202,9 @@ transform: scale(1);
 .title-filtres {
     font-size: 1.2rem;
     font-weight: bold;
-    padding-right: 30px;
+    padding-left: 20px;
     margin-top: 15px;
+    display: inline;
 }
 
 .filtres_list{
@@ -214,7 +227,7 @@ transform: scale(1);
 /*Ajustement des icones filtres*/
 .icons
 {
-    border: 2px solid #f2f2f2;
+    border: 2px solid #dee9f7;
     height: 60px;
     width: 60px;
     border-radius: 20px;
@@ -226,6 +239,7 @@ transform: scale(1);
 .ajustement
 {
 color: #0065fc;
+background:#dee9f7;
 padding: 18px;
 border-radius: 200px;
 margin-right: 15px;
@@ -369,8 +383,9 @@ height: 3px;
 .icon-star i {
      display:inline-block;
      background-color: #ffffff;
-     width: 10px;
-     height: 1px;    
+     width: 30px;
+     height: 1px; 
+     padding: 10px;   
 }
 .hebergements .heb_full-card:hover {
         cursor: pointer;
@@ -394,6 +409,7 @@ height: 3px;
 {
     font-size: 1.3rem;
     font-weight:bolder ;
+    margin-bottom: 25px;
 }
 .poptitle{
   display: flex;
@@ -687,7 +703,7 @@ footer p
 }
 
 }
-.marseille{
+/*.marseille{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -718,7 +734,7 @@ footer p
 .activity__full-card{
   max-height: 270px;
   min-height: 270px;
-}
+}*/
 
 @media screen and (max-width:1200px)
 {
@@ -764,6 +780,40 @@ footer p
 .icon-star i{
   width: 5px;  
   }
+
+  .marseille{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "img-1 img-2 img-4"
+    "img-5 img-3 img-6";
+    margin-bottom: 100px;
+  }
+  
+  #img-1 {
+    grid-area: img-1;
+  }
+  #img-2 {
+    grid-area: img-2;  
+  }
+  #img-3 {
+    grid-area: img-3;
+  }
+  #img-4 {
+    grid-area: img-4;
+  }
+  #img-5 {
+    grid-area: img-5;
+  }
+  #img-6 {
+    grid-area: img-6;
+  }
+  .activity__full-card{
+    max-height: 270px;
+    min-height: 270px;
+  }*/
+  
 }
 
 @media screen and (max-width:900px)
@@ -917,6 +967,9 @@ footer p
     justify-content: center;
     align-items: center;
   }
+  .navigation a:hover{
+    color: #0065fc;
+   }
   .bordure-bleue{
     border-bottom: 3px solid #0065fc;
     border-top: none;
@@ -967,7 +1020,7 @@ display: block;
 background: #0065fc;
 cursor: pointer;
 border-radius: 10px 10px 10px 10px;
-height: 40px;
+height: 50px;
 width: 35px;
 color:white;
 font-weight: bold;
